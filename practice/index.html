@@ -3,6 +3,29 @@
 <head>
     <title>Practice Index</title>
 <h1>Practice Index</h1>
+
+<style>
+  <nav {
+     border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  padding: 0 3px;
+}
+</style>
 </head>
 <body>
 
@@ -11,7 +34,8 @@
 	<li class="crumb"><a href="https://mrc8git.github.io">Home</a></li>
 	<li class="crumb"><a href="https://mrc8git.github.io/practice">Practice</a></li>
 	<li class="crumb"><a href="https://mrc8git.github.io/practice/index.html">Practice Index</a></li>
-
+  </ol>
+</nav>
     <p>This is where I will...practice...</p>
 
 </body>
