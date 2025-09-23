@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>The Basics of Vim</title>
+
+<style>
+
+h1, h2 {
+   text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	background-color: LightGray;
+}
+
+h2 {
+	font-size: 25px;
+}
+.fontup {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+kbd {
+	border: 2px;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+</style>
+
+</head>
+<body>
+	<h1><u>The Basics of Vim</u></h1>
+	<hr>
+
+	<h2>What is this page?</h2>
+	<p class="fontup">This page is designed to guide you through the basics of using vim. By basics, I mean it. This is certainly not a comprehensive guide or tutorial for vim, but I do hope that, after reading this page, you'll understand enough to get around and be interseted enough to explore on your own.
+	</p>  
+	<hr>
+	<p style="font-size: 20px;">What this page will cover:</p>	
+	<ul class="fontup"> 
+		<li>What is Vim</li>
+		<li>Simple Navigation &amp; features</li>
+		<li>vimrc</li>
+	</ul>
+	<hr>	
+	<p style="font-size: 20px; text-align: center;">What is vim?</p>
+	<p>Vim is a (Unix)text editor. It comes with Linux, BSD, and macOS.</p>
+	<hr>
+ <p style="font-size: 20px; text-align: center;">Simple Navigation &amp; Features</p>
+
+ <ol style="margin-left: 10px;">
+	 <li>How to move w/keyboard keys</li>
+	 <li>Basic Commands</li>
+	 <li>Opening/Closing files</li>
+ </ol>
+	 <p style="font-size: 18px;"><u>How to move w/ keyboard keys</u></p>
+ <p style="font-size: 16px;">The basics of movement in Vim are Left/Right and Up/Down. Below, you can see the key to press for each, along with the arrow for their respective directions.</p>
+ <pre>      ^
+      k
+ &lt; h     l &gt;
+      j
+      &#8964;</pre>
+
+ <p style="font-size: 18px;"><u>Basic commands</u></p>
+ <ul style="font-size: 16px;">
+	 <li><kbd>i</kbd>: i=insert. Move your cursor to the character after the text you want to edit, press i, type/edit, then press <kbd>esc</kbd> to stop editing.</li>
+	 <li><kbd>x</kbd>: x=simple delete. Place your cursor over the character you wish to remove and press x. You did not enter any special mode, so there's nothing to exit.</li>
+	 <li><kbd>d_</kbd>: d_=delete(type). On its own, d doesn't do anything. However, it can be combined with other letters for different kinds of deletion. Some examples include: <kbd>dw</kbd>, <kbd>de</kbd>, <kbd>d$</kbd>.
+	 <li><kbd>u</kbd>: u=undo. If you accidentally use a command without meaning to, press u to undo the last command executed. This is one of the most important commands, especially for those just starting out with Vim. 
+	 <li><kbd>U</kbd>: Basically the big brother of <kbd>u</kbd>, pressing U will do the same--but for a whole line.
+ </ul>
+<p style="font-size: 18px;"><u>Opening/Closing files</u></p>
+<p style="font-size: 16px;">To open a file with Vim, open the terminal navigate to the file location, and type: <code>vim filename</code>.<br>
+Example:(file name trial.html)</p>
+<pre>
+USER location % vim trial.html <kbd>return</kbd> (or <kbd>enter</kbd>).
+*file opened
+</pre>
+<p style="font-size: 16px;">To close a file in Vim, press <kbd>esc + shift + ;</kbd> (shift + ; = :). This should open a sort of prompt mode(if you ever enter this mode by accident, just backspace). From here, there you have a few options</p>
+
+ <ul style="font-size: 16px;">
+	 <li>To exit <strong>and</strong> save all changes made to the file, type <code>wq</code> into the prompt window.</li>
+	 <li>To exit and <strong>discard</strong> all changes made, type <code>q!</code> into the prompt space.</li>
+	 <li><strong><u>NOTE</u>:</strong> if you only type <code>q</code> into the prompt, you will recieve an error message like <samp><span style="background-color: red;">E37: No write since last change (add ! to override)</span></samp>.
+ </ul>
+ <p style="font-size: 16px;">Example:</p>
+ <pre>
+<kbd>esc + shift + ;</kbd>
+*prompt open
+:[cursor]
+<kbd>wq</kbd> or <kbd>q!</kbd> <kbd>enter</kbd>
+*file closed--back in terminal
+</pre>
+<hr>
+<p style="font-size: 20px; text-align: center;">vimrc &amp; vimtutor</p>
+<p style="font-size: 16px;">Creating a vimrc file can make the user experience with vim a lot nicer. Vimrc files can change environmental aspects f rom line numbers and sytnax highlighting to the background color in vim. Some people like to modify their vim environment a lot, but, personally, I keep the modifications pretty basic--everyone's different. </p>
+<p style="font-size: 16px;">If you found this page interesting and want to learn more about vim, I highly reccomend vimtutor. It will take you through a much more in-depth tutorial about vim. To access vimtutor, simply open the terminal and type <code>vimtutor</code>. There might be an intermediate screen that pops up. If this happens just press <kbd>enter</kbd> and you'll be good to go. </p>
+<hr>
+<p style="font-size: 25px;"> Thank you for reading!</p>
+
+<footer style="text-align: center;">
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>
+</footer>
+</body>
+
+</html>
