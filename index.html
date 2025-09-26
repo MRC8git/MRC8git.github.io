@@ -17,12 +17,33 @@ h1 {
 }
 
 img {
-  width: 350px;
+  width: 250px;
   height: auto;
   border: 3px solid #1c2a4f;
   border-radius: 5px;
   margin: 10px;
 }
+
+<nav {
+      border-bottom: 1px solid black;
+      }
+
+.crumbs ol {
+      list-style-type: none;
+      padding-left: 0;
+      }
+
+      .crumb {
+      display: inline-block;
+}
+
+.crumb a::after {
+      display: inline-block;
+      color: black;
+      content: ">";
+      font-size: 80%;
+      padding: 0 3px;
+      }
 
 </style>
 
@@ -31,10 +52,15 @@ img {
 
 <body>
 <h1>MRC Webpage 1</h1>
+<hr>
 
-<p><img src="images/Penny.jpg" alt="Dog"></p>
-<p> 1+1=2 </p>
-<p><img src="images/IMG_1424.jpeg" alt="pig"></p>
+<nav class="crumbs">
+	<ol>
+		<li class="crumb"<a href="https://mrc8git.github.io">Home</a></li>
+	</ol>
+
+
+<p><img src="images/Penny.jpg" alt="Dog">
 <p>I will write about what I'm doing with this website and how learning html, css, and java is going</p>
 <p><q>The future depends on what you do today.</q> - Mahatma Gandhi</p> 
 
@@ -44,11 +70,12 @@ img {
 	<li><a href="https://mrc8git.github.io/practice/minimal.html">Minimal</a>
   </ul>
 </nav>
-</body>
 
 <footer style="text-align: center;">
 <a href="http://validator.w3.org/check/referer">
 <strong> HTML </strong> Valid! </a>
 </footer>
+</body>
+
 
 </html>
