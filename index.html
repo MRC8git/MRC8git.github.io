@@ -23,38 +23,32 @@ img {
   margin: 10px;
 }
 
-ul {
+ul.nav {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #6787b5;
 }
-
-li { 
+li.nav { 
 	float: left;
 }
-
-li a, .dropbtn {
+li.nav a, .dropbtn {
 	display: inline-block;
 	color: white;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 }
-
-li a:hover, .dropdown:hover .dropbtn {
+li.nav a:hover, .dropdown:hover .dropbtn {
 	background-color: #42546f;
 }
-
-ul li a.active {
+ul li.nav a.active {
 	background-color: #7cc2c2;
 }
-
 li.dropdown {
 	display: inline-block;
 }
-
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -63,7 +57,6 @@ li.dropdown {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
-
 .dropdown-content a {
 	color: black;
 	padding: 1px 16px;
@@ -71,14 +64,13 @@ li.dropdown {
 	display: block;
 	text-align: left;
 }
-
 .dropdown-content a:hover {
 	background-color: #f1f1f1;
 }
-
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+
 
 </style>
 
@@ -89,8 +81,8 @@ li.dropdown {
 <h1>MRC Webpage 1</h1>
 <hr>
 
-	<ul>
-		<li><a href="https://mrc8git.github.io" class="active">Home</a></li>
+	<ul class=”nav”>
+		<li class=”nav”><a href="https://mrc8git.github.io">Home</a></li>
 		<li class="dropdown">
 		  <a href="javascript:void(0)" class="dropbtn">Practice</a>
 			<div class="dropdown-content">
@@ -103,12 +95,14 @@ li.dropdown {
 		<li class="dropdown">
 		  <a href="javascript:void(0)" class="dropbtn">Projects</a>
 		  	<div class="dropdown-content">
-				<a href="https://mrc8git.github.io/projects/recipes/index.html">Recipes</a>
+				<a href="https://mrc8git.github.io/projects/recipes/index.html">Recipes Homepage</a>
+				<a href="https://mrc8git.github.io/projects/recipes/1.html">#1-Pasta Sauce</a>
+				<a href="https://mrc8git.github.io/projects/recipes/2.html">#2-Tomato Eggs</a>
 			</div>
 		</li>
-		<li><a href="https://mrc8git.github.io/js/validate.js">JS(valid.)</a></li>
+		<li class=”nav”><a href="https://mrc8git.github.io/js/validate.js">JS(valid.)</a></li>
 	</ul>
-	
+
 <img src="images/Penny.jpg"
      alt="Puppers"
      srcset="images/Penny-smol.jpg 240w,
