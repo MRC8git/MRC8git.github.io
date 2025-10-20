@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Schedule...</title> 
+
+<style>
+
+
+h1, h2 {
+   text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+table, th, td {
+	border: 1px black solid;
+	border-collapse: collapse;
+}
+
+th {
+	text-align: center;
+}
+
+div.tablecontainer {
+  overflow-x: auto;
+}
+
+.fontup {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #6787b5;
+}
+li.nav { 
+	float: left;
+}
+li.nav a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li.nav a:hover, .dropdown:hover .dropbtn {
+	background-color: #42546f;
+}
+ul li.nav a.active {
+	background-color: #7cc2c2;
+}
+li.dropdown {
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.dropdown-content a {
+	color: black;
+	padding: 1px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+</style>
+</head>
+<body>
+
+<ul class="nav">
+		<li class="nav"><a href="https://mrc8git.github.io">Home</a></li>
+		<li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Practice</a>
+			<div class="dropdown-content">
+			  <a href="https://mrc8git.github.io/practice/index.html">Practice Index</a>
+			  <a href="https://mrc8git.github.io/practice/schedule.html">Schedule</a>
+			  <a href="https://mrc8git.github.io/practice/terminal.html">Basics of Vim</a>
+			  <a href="https://mrc8git.github.io/practice/network_notes.html.html" class="active">Network Noters</a>
+		  	  <a href="https://mrc8git.github.io/practice/minimal.html">Minimal</a>
+			</div>
+		</li>
+		  <li class="nav"><a href="https://mrc8git.github.io/js/validate.js">JS(valid.)</a></li>
+	</ul>
+	<h1><u>Network Notes</u></h1>
+	<hr>
+
+	<dl>
+		<dt>Protocol</dt>
+		<dd>The set of rules for communication between networking 
+		devices--how the information communicated should be formatted.
+		One example is TCP/IP(Transmission Control Protocol/Internet 
+		Protocol)</dd>
+
+		<dt>Packet</dt>
+		<dd>A tiny piece of information, usually part of a larger message.
+		A singular message could contain millions of packets.</dd>
+
+		<dt>Header</dt>
+                <dd>Basic information about a packet.(eg., To, From, order)</dd>
+
+		<dt>Payload</dt>
+		<dd>The message, the substance, of a set of packets.</dd>
+
+		<dt>Router</dt>
+		<dd>A device that connects devices and networks, that packets from
+		a multitude of those devices which travels through.</dd>
+		
+		<dt>Routing Table</dt>
+		<dd>A table that uses the IP adresses of routers to store their
+		locations.</dd>
+	</dl>
+	<hr>
+	<h2>Problems & Solutions Encountered in Simulation</h2>
+	<table>
+		<tr>
+			<th>Problem</th>
+			<th>Solution</th>
+		</tr>
+		<tr>
+			<td>It was difficult to determine where to send packets</td>
+			<td>Sent packets with the message "Where are you?"</td>
+		</tr>
+		<tr>
+			<td>Unknown return addresses(how to get message back)</td>
+			<td>Included the network# of sender and intended reciever</td>
+		</tr>
+		<tr>
+			<td>Overwhelmed "routers" due to high packet traffic</td>
+			<td>Lowered the rate at which packets could be sent</td>
+		</tr>
+	</table>
+
+
+<footer style="text-align: center;">
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a>
+</footer>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!">
+    </a>
+</p>
+
+</body>
+</html>
+
