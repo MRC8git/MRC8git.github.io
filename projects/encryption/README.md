@@ -3,25 +3,20 @@
 
 ## Part 1: Key Exchange
 
-My Key:
-My Partner's Key:
+My Key: 8
 
-Our initial shared key:
+My Partner's Key: 2
+
+Our initial shared key: 10
 
 ## Part 2: Messaging
 
-Complete this table with each of your messages. This should 
-include the entire conversation - the messages that you sent
-and the messages that you received.
-
-(If you used something other than the caesar cipher here, describe what you did)
-
-| Encoded Message | Decoded Message | Key |
-| --------------- | --------------- | --- |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
+| Encoded Message                    | Decoded Message                    | Key |
+| ---------------------------------- | ---------------------------------- | --- |
+| Rovvy ryg kbo iye                  | Hello how are you                  |  10 |
+| Apcqpnewj qtyp xlolxp              | Perfectly fine madame              |  11 |
+| Vojs mci twbwgvsr mcif dfcxqhg?    | Have you finished your projects?   |  14 |
+| Klt tev tlria vlr bsbo qefkh qexq? | Now why would you ever think that? |  23 |
 
 
 ## Part 3: Connection to TCP/IP Model
