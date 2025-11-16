@@ -81,18 +81,18 @@ In this simulation, asymmetric encryption was used between partners to exchange 
 
 - Why is it important that you never share your secret key?
 
-	It is extremely important to never share your secret key because doing so would make you vulnerable to   
+	It is extremely important to never share your secret key because doing so would leave your messages vulnerable so that jsut about anyone who felt like it could meddle (intercept, view, modify, etc) with your messages. 
 
 - In the transport layer, do these messages use TCP or UDP? Why?
 
-	The messages in the transport layer use ___ because ___
+	The messages in the transport layer use TCP, Transmission Control Protocol, because it is connection based and more reliable, though slower. UDP, on the other hand is connectionless and faster, but less reliable--more suited to fast paced online usages of gaming and streaming than those of emailing and the like that would better done over TCP. 
 
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
 
-	In the 
+	In the internet layer, routers take the packets that were made and look at their destination adresses, before determining their best guess of the optimal path(s) for the packets to take in order to reach their destination. Then, in the link layer, computers work together to ensure that they all get fair access to links which send/move the data (packets) from their source computers to their destination computers. 
 
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
 
-	Despite not being able to read the content of the message,
+	Despite not being able to read the content of the message, an adversary in the middle still has access to the information contained in the header of the packet(i.e., source, destination, sequence number of packets in a message, other information). 
 
