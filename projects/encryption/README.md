@@ -31,10 +31,13 @@ Go back to the first encrypted message that you sent (it should be in `rsa_encry
 
 This message is represented as a string of letters, numbers, and symbols. But we know that the real message is in binary.
 
-Select the first six characters from this message and copy them here:
+Select the first six characters from this message and copy them here: qqNfvQ
 
 Using the ASCII table, convert these five characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
+
+Decimal: 113      113      78       102      118      81
+Binary:  01110001 01110001 01001110 01100110 01110110 01010001
 
 ### Transport Layer: Break your message into packets
 
@@ -43,22 +46,22 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     =========
     Packet 1:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]  
+    Source: [Maya]
+    Destination: [Eugenie]  
     Sequence: 1/3
     Data: [binary for char 1] [binary for char 2]
     =========
     Packet 2:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Maya]
+    Destination: [Eugenie]
     Sequence: 2/3 
     Data: [binary for char 3] [binary for char 4]
     =========
     Packet 3:
 
-    Source: [Your Name]
-    Destination: [Partner's Name]
+    Source: [Maya]
+    Destination: [Eugenie]
     Sequence: 3/3
     Data: [binary for char 5] [binary for char 6]
     =========
@@ -66,7 +69,11 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+	Symmetric encryption
+
 - Why is it important that this protocol uses a new key for each message?
+	
+
 - Why is it important that you never share your secret key?
 - In the transport layer, do these messages use TCP or UDP? Why?
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
