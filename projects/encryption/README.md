@@ -77,11 +77,11 @@ In this simulation, asymmetric encryption was used between partners to exchange 
 
 - Why is it important that this protocol uses a new key for each message?
 	
-	Using a new key for each message is important for this protocol because 
+	Using a new key for each message is important for this protocol because it adds an extra layer of security to the chain of messages. It wouldn't be that difficult for a hacker to discover the meaning of one of these messages through trial and error, and, if the same key were to be used for the whole conversation, figuring out that one message could give the hacker the ability to intercept and decode the entire conversation. However, by changing the key with each message, the hacker would only get that single snippet of the conversation each time and there isn't a whole lot that can be done with information from a single message without context.  
 
 - Why is it important that you never share your secret key?
 
-	It is extremely important to never share your secret key because it
+	It is extremely important to never share your secret key because doing so would make you vulnerable to   
 
 - In the transport layer, do these messages use TCP or UDP? Why?
 
