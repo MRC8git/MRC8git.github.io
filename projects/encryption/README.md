@@ -71,7 +71,9 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
 
-	Symmetric encryption
+	The difference between symmetric and asymmetric encryption is that symmetric encryption only uses one key for both encryption and decryption, while asymmetric encryption uses two keys--one public key used to encrypt and one private key to decrypt. Both methods can be not just important, but vital, to different tasks--but it is important to use them for the right things. Being simpler, symmetric encryption is easier and faster to use, but also to hack. On the flip side, asymmetric encryption is more complex, making it more time consuming and difficult to execute--or hack. 
+
+In this simulation, asymmetric encryption was used between partners to exchange their intitial messages over Github, allowing them to use their public keys to determine the key (shift) that would be used for their future messages. Then, symmetric encryption was simulated with ceaser cipher, the first shift having been exchanged in the first message with asymmetric encryption, over a google doc for the remainder of the messages. 
 
 - Why is it important that this protocol uses a new key for each message?
 	
