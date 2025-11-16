@@ -15,7 +15,7 @@ Our initial shared key: 10
 | ---------------------------------- | ---------------------------------- | --- |
 | Rovvy ryg kbo iye                  | Hello how are you                  |  10 |
 | Apcqpnewj qtyp xlolxp              | Perfectly fine madame              |  11 |
-| Vojs mci twbwgvsr mcif dfcxqhg?    | Have you finished your projects?   |  14 |
+| Vojs mci twbwgvsr mcif dfcxsqhg?   | Have you finished your projects?   |  14 |
 | Klt tev tlria vlr bsbo qefkh qexq? | Now why would you ever think that? |  23 |
 
 
