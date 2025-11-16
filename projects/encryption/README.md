@@ -50,21 +50,21 @@ Assume that each packet can hold two bytes. Fill in the packet information below
     Source: [Maya]
     Destination: [Eugenie]  
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: [01110001] [01110001]
     =========
     Packet 2:
 
     Source: [Maya]
     Destination: [Eugenie]
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: [01001110] [01100110]
     =========
     Packet 3:
 
     Source: [Maya]
     Destination: [Eugenie]
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: [01110110] [01010001]
     =========
 
 ## Part 4: Reflection Questions
