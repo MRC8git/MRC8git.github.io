@@ -70,14 +70,27 @@ Assume that each packet can hold two bytes. Fill in the packet information below
 ## Part 4: Reflection Questions
 
 - What is the difference between symmetric and asymmetric encryption? What purpose did each serve in this simulation?
+
 	Symmetric encryption
 
 - Why is it important that this protocol uses a new key for each message?
 	
+	Using a new key for each message is important for this protocol because 
 
 - Why is it important that you never share your secret key?
+
+	It is extremely important to never share your secret key because it
+
 - In the transport layer, do these messages use TCP or UDP? Why?
+
+	The messages in the transport layer use ___ because ___
+
 - Now that you've created packets in the transport layer, give a short explanation of what happens to these packets in the internet layer and in the link layer.
+
+	In the 
+
 - This protocol successfully encrypts the **content** of the message. Even though and adversary in the middle can't read the content of the message, what other
 information can they still see?
+
+	Despite not being able to read the content of the message,
 
