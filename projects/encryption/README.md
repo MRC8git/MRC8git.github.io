@@ -37,6 +37,7 @@ Using the ASCII table, convert these five characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
 
 Decimal: 113      113      78       102      118      81
+
 Binary:  01110001 01110001 01001110 01100110 01110110 01010001
 
 ### Transport Layer: Break your message into packets
