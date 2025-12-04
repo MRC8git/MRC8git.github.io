@@ -10,6 +10,11 @@
 
 <style>
 
+input, label, select{
+	display: block;
+	margin: 4px;
+}
+
 </style>
 
 <title> Ice Cream Form </title>
@@ -19,11 +24,24 @@
 
 	<form action="https://httpbin.org/post"
 	      method="post">
-		What is your name?
-		<input type="text" name="your name">
+		<label for="email">Enter your email address:</label>
+		<input type="text" name="email">
+
+
+		<label for="phone #">Enter your phone number:</label>
+		<input type="text" name="phone #">
+
+
+		<label for="people">How many people will you be bringing to the party?</label>
+		<input type="text" name="people">
+
+
+		<p>What is your favorite flavor of ice cream?</p>
+		<label for "Vanilla">Vanilla</label>
+		<input type="radio" id="Vanilla" name="flavor" value="vanilla" required>
+
 
 		<button type="submit">Submit</button>
-
 </body>
 
 
