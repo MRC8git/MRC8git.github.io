@@ -3,7 +3,7 @@ ul.nav {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #6787b5;
+	background-color: #263461;
 }
 li.nav { 
 	float: left;
@@ -19,7 +19,7 @@ li.nav a:hover, .dropdown:hover .dropbtn {
 	background-color: #42546f;
 }
 ul li.nav a.active {
-	background-color: #7cc2c2;
+	background-color: #156363;
 }
 li.dropdown {
 	display: inline-block;
