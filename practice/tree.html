@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>A Pretty Holiday Tree</title>
+
+    <script src="../js/validate.js"></script>
+
+<link rel="stylesheet" href="../css/nav.css">
+
+<style>
+
+body {
+
+	background-color: lightblue;
+}
+#container {
+	background-color: white;
+	width: 600px;
+	height: 80vh;
+	margin: auto;
+	position: relative;
+}
+#tree {
+	width: 0px;
+	height:0px;
+	border-bottom: 80vh solid green;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+	position: relative;
+
+}
+#box {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: red;
+	top: 400px;
+	left: -15px;
+}
+
+#sphere {
+	position: absolute;
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: radial-gradient(circle at 40% 30%,#0000 4%,57%,#000 90%) #FE4365;
+	top: 300px;
+	left: -100px;
+}
+#star {
+	width: 150px;
+	aspect-ratio: 1;
+	background: #F8CA00;
+  clip-path: polygon(50% 0,
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+   ); 
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+
+
+</style>
+
+</head>
+<body>
+	<h1> This is a tree</h1>
+	<div id="container">
+	<div id="tree">
+	<div id="box"></div>
+	<div id="sphere"></div>
+	<div id="star"></div>
+	</div>
+	</div>
+
+</body>
+</html>	
