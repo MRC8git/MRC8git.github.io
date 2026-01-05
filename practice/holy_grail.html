@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Holy Grail</title>
+    <meta charset="utf-8">
+
+<script src="../../js/validate.js"></script>
+
+<link rel="stylesheet" href="../css/nav.css">
+
+<style>
+
+.grid {
+  display: grid;
+  height: 100vh;
+  grid:
+    'head  head  head' 100px
+    'side1  main  side2' 1fr
+    'foot  foot  foot' 200px
+    /200px 1fr 200px;
+    gap: 10px;
+} 
+
+#header{
+	grid-area: head;
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#side1{
+	grid-area: side1;
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#main{
+	grid-area: main;
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#side2{
+	grid-area: side2;
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#foot{
+	grid-area: foot;
+	background-color: green;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+
+
+</style>
+</head>
+<body>
+
+	<ul class="nav">
+		<li class="nav"><a href="https://mrc8git.github.io">Home</a></li>
+		<li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Practice</a>
+			<div class="dropdown-content">
+			  <a href="https://mrc8git.github.io/practice/index.html">Practice Index</a>
+			  <a href="https://mrc8git.github.io/practice/schedule.html">Schedule</a>
+			  <a href="https://mrc8git.github.io/practice/terminal.html">Basics of Vim</a>
+		  	  <a href="https://mrc8git.github.io/practice/minimal.html">Minimal</a>
+			</div>
+		</li>
+		<li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Projects</a>
+		  	<div class="dropdown-content">
+				<a href="https://mrc8git.github.io/projects/recipes/index.html">Recipes Homepage</a>
+				<a href="https://mrc8git.github.io/projects/recipes/1.html">#1-Pasta Sauce</a>
+				<a href="https://mrc8git.github.io/projects/recipes/2.html">#2-Tomato Eggs</a>
+			</div>
+		</li>
+		<li class="nav"><a href="https://mrc8git.github.io/js/validate.js">JS(valid.)</a></li>
+	</ul>
+
+
+	<div class="grid">
+		<div id="header">HEADER</div>
+		<div id="side1">SIDE</div>
+		<div id="main">MAIN</div>
+		<div id="side2">SIDE</div>
+		<div id="foot">FOOT</div>
+
+
+
+	</div>
+
+
+
+
+
+</body>
+</html>
+
