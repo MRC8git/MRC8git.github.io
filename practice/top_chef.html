@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cozy Cafe</title>
+    <meta charset="utf-8">
+
+<script src="../../js/validate.js"></script>
+
+
+<style>
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #SaddleBrown;
+}
+li.nav { 
+	float: left;
+}
+li.nav a,{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li.nav a:hover {
+	background-color: #42546f;
+}
+ul li.nav a.active {
+	background-color: #156363;
+}
+
+
+.grid {
+  display: grid;
+  height: 100vh;
+  grid:
+    'head  head  head' 100px
+    'main  main  main' 1fr
+    'foot  foot  foot' 200px
+    /200px 1fr 200px;
+    gap: 10px;
+} 
+
+#header{
+	grid-area: head;
+	background-color: Burlywood;
+	text-align: center;
+	font-size: 40px;
+	color: black;	
+}
+#main{
+	grid-area: main;
+	background-color: BlanchedAlmond;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#foot{
+	grid-area: foot;
+	background-color: BurlyWood;
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+
+
+</style>
+</head>
+<body>
+
+	<ul class="nav">
+		<li class="nav"><a href="https://mrc8git.github.io/practice/top_chef.html">Home</a></li>
+		<li class="nav"><a href="https://mrc8git.github.io/practice/top_menu.html">Menu</a></li>
+		<li class="nav"><a href="https://mrc8git.github.io/practice/top_story.html">Our Story</a></li>
+	
+	</ul>
+
+
+	<div class="grid">
+		<div id="header">HEADER</div>
+		<div id="side1">SIDE</div>
+		<div id="main">MAIN</div>
+		<div id="side2">SIDE</div>
+		<div id="foot">FOOT</div>
+
+
+
+	</div>
+
+
+
+
+
+</body>
+</html>
+
+
