@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>M-Web</title>
+    <meta charset="utf-8">
+
+<script src="../../js/validate.js"></script>
+
+<link rel="stylesheet" href="../../css/clientnav.css">
+
+<style>
+
+.grid {
+  display: grid;
+  height: 100vh;
+  grid:
+    'head  head  head' 100px
+    'main  main  main' 1fr
+    'foot  foot  foot' 200px
+    /200px 1fr 200px;
+    gap: 10px;
+} 
+
+#header{
+	grid-area: head;
+	background-color: rgba(138, 177, 235, 0.92);
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+#main{
+	grid-area: main;
+	background-color: rgb(195, 218, 247);
+	text-align: center;
+	font-size: 40px;
+	color: black;
+}
+
+#foot{
+	grid-area: foot;
+	background-color: rgb(80, 89, 119);
+	text-align: center;
+	font-size: 40px;
+	color: rgb(255, 255, 255);
+}
+
+
+</style>
+</head>
+<body>
+<header>
+	<img class="logo" src="media/Logoside.svg" alt="logo">
+	<ul class="nav">
+		<li class="nav"><a href="https://mrc8git.github.io/projects/client/index.html">Home</a></li>
+        <li class="nav"><a href="https://mrc8git.github.io/projects/client/pers_exp.html">Personal Experience</a></li>
+        <li class="nav"><a href="https://mrc8git.github.io/projects/client/background.html">Background</a></li>
+		<li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Services</a>
+			<div class="dropdown-content">
+			  <a href="https://mrc8git.github.io/projects/client/persther.html">Personal</a>
+			</div>
+		</li>
+        <li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Workshops</a>
+			<div class="dropdown-content">
+			  <a href="https://mrc8git.github.io/projects/client/persther.html">Personal</a>
+			</div>
+		</li>
+		<li class="nav"><a href="https://mrc8git.github.io/projects/client/about.html">About</a></li>
+	</ul>
+    <hr>
+ </header>
+ <p> 
+    Services
+    
+    groups
+        mbsr
+    
+    group therapy 
+    individual therapy
+
+    minority
+    family 
+    imigrant
+    Contact
+    
+ </p>
+
+	<div class="grid">
+		<div id="header">Jennifer Cho</div>
+		<div id="main">Welcome!</div>
+		<div id="side2">SIDE</div>
+		<div id="foot">FOOT</div>
+
+
+
+	</div>
+
+
+
+
+
+</body>
+</html>
+
