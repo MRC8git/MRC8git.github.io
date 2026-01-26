@@ -1,0 +1,29 @@
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flexbox-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 100px;
+}
+
+.nav {
+	width: 200px;
+}
+
+.nav1 {
+
+}
+
+.nav2 {
+
+}
+
+.nav3 {
+
+}
