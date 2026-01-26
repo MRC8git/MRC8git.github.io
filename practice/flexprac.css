@@ -1,6 +1,6 @@
 .flexbox-container {
     display: flex;
-    flex: ;
+    flex: content;
 }
 
 .box {
@@ -19,8 +19,4 @@
 
 .box-3 {
     min-height: 300px;
-}
-
-.nav {
-
 }
