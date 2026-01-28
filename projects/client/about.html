@@ -20,31 +20,50 @@ h1 {
 	display: flex;
 	justify-content: flex-start;
 	justify-content: space-around;
+	gap: 2%;
+	padding-bottom: 2%;
 }
 
 .card { 
 	background-color: aliceblue;
-    height: 50vh;
-    width: 50%;
-    text-align: left;
-    padding-top: 10px;
     text-decoration: none;
     color: black;
-	font-size: 2rem;
 }
 
-.cta-ext { 
-	position: relative;
-	top: 190px;
-	left: 80px;
-	font-size: 1rem;
+.mstxt{
+    height: 25%;
+    width: 25%;
+	border-radius: 15px;
+    text-align: center;
+	align-content: center;
+	align-self: start;
+    padding: 15px;
+	font-size: 4rem;
 }
 
-.cta-btn { 
-	position: relative;
-	top: 200px;
-	left: 80px;
-	font-size: 1rem;
+.msext { 
+	height: 25%;
+    width: 25%;
+	border-radius: 15px;
+    text-align: center;
+	align-content: center;
+	align-self: center;
+    padding: 15px;
+	font-size: 3rem;
+	line-height: 3.5rem;
+	
+}
+
+.mspo { 
+	height: 25%;
+    width: 25%;
+	border-radius: 15px;
+    text-align: center;
+	align-content: center;
+	align-self: end;
+    padding: 15px;
+	font-size: 3rem;
+	line-height: 3.5rem;
 }
 
 </style>
@@ -68,9 +87,11 @@ h1 {
 	<h1>About</h1>
 
     <div class="mission">
-		<div class="card">Our Mission
+		<div class="card mstxt">Our Mission:<br>Build a kinder world
 		</div>	
-		
+		<div class="card msext">Support<br>Protect<br>Help<br>Uplift<br>Encourage</div>	
+		<div class="card mspo">Everyone<br>Minorities<br>
+		</div>
 
     </div>
 
