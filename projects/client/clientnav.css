@@ -13,13 +13,19 @@ body {
 nav {
 	width: 100%;
 	padding: 1rem 5%;
-	background: #fefeff0d;
+	background: #fefeff5f;
 	border-bottom: 1px solid #d8d8f4;
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(50px);
 
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	display:block;
 }
 
 .logo {
