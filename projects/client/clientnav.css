@@ -6,15 +6,15 @@
 
 body { 
 	font-family: "Poppins", sans-serif;
-	background: #ecefff;
+	background: #d8d8f4;
 	color: rgb(0, 0, 0);
 }
 
 nav {
 	width: 100%;
 	padding: 1rem 5%;
-	background: rgba(156, 136, 236, 0.05);
-	border-bottom: 1px solid rgba(16, 8, 102, 0.1);
+	background: #fefeff0d;
+	border-bottom: 1px solid #d8d8f4;
 	backdrop-filter: blur(15px);
 
 	display: flex;
@@ -25,7 +25,7 @@ nav {
 .logo {
 	font-size: 2rem;
 	font-weight: 700;
-	color: #5e38f8;
+	color: #222496;
 	letter-spacing: 1px;
 	margin-right: auto;
 }
@@ -40,15 +40,15 @@ nav {
 .nav-links li a {
 	position: relative;
 	font-size: 1.2rem;
-	font-weight: 500;
+	font-weight: 550;
 	text-decoration: none;
-	color: #5e38f8;
+	color: #222496;
 	transition: 0.3s;
 }
 
 .nav-links li a:hover {
-	color: #977cff;
-	text-shadow: 0 0 10px #a5afff;
+	color: #3b3da5;
+	text-shadow: 0 0 10px #3b3da5;
 }
 
 .btns {
@@ -60,22 +60,22 @@ nav {
 	border-radius: 30px;
 	font-weight: 600;
 	font-size: 1rem;
-	background: #8166ee;
-	color: #0f122a;
-	box-shadow: 0 0 5px #9279f5;
+	background: #222496;
+	color: #ece5f0;
+	box-shadow: 0 0 5px #222496;
 	border: none;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
 .btn:hover {
-	background: #977cff;
-	box-shadow: 0 0 15px #977cff;
+	background: #3b3da5;
+	box-shadow: 0 0 15px #3b3da5;
 }
 
 
 footer {
-	background: #a5afff;
+	background: #d8d8f4;
 	min-height: 300px;
 }
 
