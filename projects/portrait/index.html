@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portrait</title>
+    <meta charset="utf-8">
+<style>
+canvas {
+  border: 1px solid black;
+}
+
+</style>
+</head>
+
+<body>
+  <canvas id="canvas" width="800" height="800"></canvas>
+    <script>
+      function draw() { 
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "rgb(227 185 127 / 50%)";
+      ctx.beginPath();
+      ctx.moveTo(200, 200);
+      ctx.arcTo(450, 50, 600, 200, 270);
+      ctx.fill();
+
+       ctx.beginPath();
+  ctx.moveTo(300, 100);
+  ctx.bezierCurveTo(200, 200, 210, 210, 220, 400);
+  ctx.bezierCurveTo(230, 480, 240, 490, 250, 500);
+  ctx.bezierCurveTo(260, 580, 270, 590, 280, 600);
+  ctx.bezierCurveTo(290, 680, 300, 690, 310, 700);
+  ctx.bezierCurveTo(450, 530, 330, 550, 340, 500);
+  ctx.bezierCurveTo(450, 350, 400, 360, 600, 200);
+  ctx.stroke();
+
+
+
+
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(50,0)
+        ctx.lineTo(50, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(100,0)
+        ctx.lineTo(100, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(150,0)
+        ctx.lineTo(150, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(200,0)
+        ctx.lineTo(200, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(250,0)
+        ctx.lineTo(250, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(300,0)
+        ctx.lineTo(300, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(350,0)
+        ctx.lineTo(350, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(400,0)
+        ctx.lineTo(400, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(450,0)
+        ctx.lineTo(450, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(500,0)
+        ctx.lineTo(500, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(550,0)
+        ctx.lineTo(550, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(600,0)
+        ctx.lineTo(600, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(650,0)
+        ctx.lineTo(650, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(700,0)
+        ctx.lineTo(700, 800);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(750,0)
+        ctx.lineTo(750, 800);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+
+
+         ctx.beginPath();
+        ctx.moveTo(0,50)
+        ctx.lineTo(800, 50);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0,100)
+        ctx.lineTo(800, 100);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0,150)
+        ctx.lineTo(800, 150);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0,200)
+        ctx.lineTo(800, 200);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0,250)
+        ctx.lineTo(800, 250);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0,300)
+        ctx.lineTo(800, 300);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0, 350)
+        ctx.lineTo(800, 350);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0, 400)
+        ctx.lineTo(800, 400);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0, 450)
+        ctx.lineTo(800, 450);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(0, 500)
+        ctx.lineTo(800,500);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0, 550)
+        ctx.lineTo(800, 550);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(0, 600)
+        ctx.lineTo(800, 600);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0, 650)
+        ctx.lineTo(800, 650);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+
+                ctx.beginPath();
+        ctx.moveTo(0, 700)
+        ctx.lineTo(800, 700);
+        ctx.strokeStyle = "blue";
+        ctx.stroke();
+
+         ctx.beginPath();
+        ctx.moveTo(0, 750)
+        ctx.lineTo(800, 750);
+        ctx.strokeStyle = "lightblue";
+        ctx.stroke();
+}
+draw();
+
+
+</script>
+</body>
+
+</html>
+
