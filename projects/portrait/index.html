@@ -18,26 +18,65 @@ canvas {
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
-      ctx.fillStyle = "rgb(227 185 127 / 50%)";
+      /*big part of hat*/  
+ctx.fillStyle = "rgb(133 132 127)";
+ctx.beginPath();
+  ctx.moveTo(130, 250);
+  ctx.bezierCurveTo(200, 150, 400, 75, 580, 150);
+  ctx.moveTo(580, 150)
+  ctx.bezierCurveTo(600, 150, 680, 250, 700, 400);
+  ctx.lineTo(130, 250);
+  ctx.fill();
+
+      /*forehead*/  
+      ctx.fillStyle = "rgb(227 185 127 / 80%)";
       ctx.beginPath();
-      ctx.moveTo(200, 200);
-      ctx.arcTo(450, 50, 600, 200, 270);
+      ctx.moveTo(130, 400);
+      ctx.lineTo(145, 350);
+      ctx.lineTo(200, 300);
+      ctx.lineTo(300, 245);
+      ctx.lineTo(400, 215);
+      ctx.lineTo(450, 210);
+      ctx.lineTo(500, 225);
+      ctx.lineTo(550, 250);
+      ctx.lineTo(600, 280);
+      ctx.lineTo(620, 300);
+      ctx.lineTo(640, 350);
+      ctx.lineTo(650, 400);
       ctx.fill();
 
-       ctx.beginPath();
-  ctx.moveTo(300, 100);
-  ctx.bezierCurveTo(200, 200, 210, 210, 220, 400);
-  ctx.bezierCurveTo(230, 480, 240, 490, 250, 500);
-  ctx.bezierCurveTo(260, 580, 270, 590, 280, 600);
-  ctx.bezierCurveTo(290, 680, 300, 690, 310, 700);
-  ctx.bezierCurveTo(450, 530, 330, 550, 340, 500);
-  ctx.bezierCurveTo(450, 350, 400, 360, 600, 200);
-  ctx.stroke();
+        /*eyebrow left 
+        ctx.beginPath();
+      ctx.moveTo(650, 400);
+      ctx.lineTo(650, 500);
+      ctx.lineTo(635, 600);
+      ctx.fill();
+*/
+        /*mid face & chin*/  
+      ctx.beginPath();
+      ctx.moveTo(650, 400);
+      ctx.lineTo(650, 500);
+      ctx.lineTo(635, 600);
+      ctx.lineTo(600, 700);
+      ctx.lineTo(500, 770);
+      ctx.lineTo(400, 795);
+      ctx.lineTo(300, 780);
+      ctx.lineTo(250, 750);
+      ctx.lineTo(200, 700);
+      ctx.lineTo(150, 600);
+      ctx.lineTo(130, 400);
+      ctx.fill();
 
 
+/*
 
+ctx.fillStyle = "rgb(60 37 29)";
+ctx.beginPath();
+  ctx.moveTo(50, 350);
+  ctx.bezierCurveTo(100, 300, 200, 225, 250, 210);  
+  ctx.fill();
 
-
+*/
 
 
         ctx.beginPath();
