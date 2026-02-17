@@ -18,17 +18,17 @@ canvas {
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
-      /*big part of hat*/  
-ctx.fillStyle = "rgb(133 132 127)";
-ctx.beginPath();
-  ctx.moveTo(130, 250);
-  ctx.bezierCurveTo(200, 150, 400, 75, 580, 150);
-  ctx.moveTo(580, 150)
-  ctx.bezierCurveTo(600, 150, 680, 250, 700, 400);
-  ctx.lineTo(130, 250);
-  ctx.fill();
+        /*big part of hat*/  
+      ctx.fillStyle = "rgb(133 132 127)";
+      ctx.beginPath();
+      ctx.moveTo(130, 250);
+      ctx.bezierCurveTo(200, 150, 400, 75, 580, 150);
+      ctx.moveTo(580, 150)
+      ctx.bezierCurveTo(600, 150, 680, 250, 700, 400);
+      ctx.lineTo(130, 250);
+      ctx.fill();
 
-      /*forehead*/  
+        /*forehead*/  
       ctx.fillStyle = "rgb(227 185 127 / 80%)";
       ctx.beginPath();
       ctx.moveTo(130, 400);
@@ -45,13 +45,6 @@ ctx.beginPath();
       ctx.lineTo(650, 400);
       ctx.fill();
 
-        /*eyebrow left 
-        ctx.beginPath();
-      ctx.moveTo(650, 400);
-      ctx.lineTo(650, 500);
-      ctx.lineTo(635, 600);
-      ctx.fill();
-*/
         /*mid face & chin*/  
       ctx.beginPath();
       ctx.moveTo(650, 400);
@@ -67,6 +60,111 @@ ctx.beginPath();
       ctx.lineTo(130, 400);
       ctx.fill();
 
+        /*eyebrow left*/
+      ctx.fillStyle = "rgb(75 38 19 / 50%)";
+      ctx.beginPath();
+      ctx.moveTo(140, 370);
+      ctx.lineTo(200, 330);
+      ctx.lineTo(290, 320);
+      ctx.lineTo(300, 350);
+      ctx.fill();
+
+        /*eyebrow right*/
+      ctx.fillStyle = "rgb(75 38 19 / 50%)";
+      ctx.beginPath();
+      ctx.moveTo(615, 370);
+      ctx.lineTo(600, 330);
+      ctx.lineTo(480, 320);
+      ctx.lineTo(480, 350);
+      ctx.fill();
+
+        /*eye left*/
+      ctx.fillStyle = "rgb(204 166 153 )";
+      ctx.beginPath();
+      ctx.moveTo(200, 430);
+      ctx.lineTo(325, 425);
+      ctx.lineTo(300, 450);
+      ctx.lineTo(250, 450);
+      ctx.lineTo(200, 430);
+      ctx.fill();
+      
+        /*eye left outline*/
+      ctx.fillStyle = "black";
+      ctx.strokeWidth = "3px";
+      ctx.beginPath();
+      ctx.moveTo(200, 430);
+      ctx.lineTo(325, 425);
+      ctx.lineTo(300, 450);
+      ctx.lineTo(250, 450);
+      ctx.lineTo(200, 430);
+      ctx.stroke();
+
+      /*eye right*/
+      ctx.fillStyle = "rgb(204 166 153 )";
+      ctx.beginPath();
+      ctx.moveTo(465, 430);
+      ctx.lineTo(500, 400);
+      ctx.lineTo(590, 420);
+      ctx.lineTo(550, 445);
+      ctx.lineTo(500, 450);
+      ctx.lineTo(465, 430);
+      ctx.fill();
+
+        /*eye right outline*/
+      ctx.fillStyle = "black";
+      ctx.strokeWidth = "3px";
+      ctx.beginPath();
+      ctx.moveTo(465, 430);
+      ctx.lineTo(500, 400);
+      ctx.lineTo(590, 420);
+      ctx.lineTo(550, 445);
+      ctx.lineTo(500, 450);
+      ctx.lineTo(465, 430);
+      ctx.stroke();
+
+      /*iris left*/
+      ctx.fillStyle = "rgb(51 32 8)";
+      ctx.beginPath();
+      ctx.arc(275, 425, 25, 0, Math.PI * 2, true)
+      ctx.fill();
+
+      /*iris right*/
+      ctx.beginPath();
+      ctx.arc(525, 425, 25, 0, Math.PI * 2, true)
+      ctx.fill();
+
+      /*pupil left*/
+      ctx.fillStyle = "rgb(36 23 5)";
+      ctx.beginPath();
+      ctx.arc(275, 425, 10, 0, Math.PI * 2, true)
+      ctx.fill();
+
+      /*pupil right*/
+      ctx.beginPath();
+      ctx.arc(525, 425, 10, 0, Math.PI * 2, true)
+      ctx.fill();
+
+        /*nose main*/
+      ctx.fillStyle = "rgb(202 167 115 / 80%)";
+      ctx.beginPath();
+      ctx.moveTo(360, 425);
+      ctx.lineTo(330, 550);
+      ctx.lineTo(355,600);
+      ctx.lineTo(410,600);
+      ctx.lineTo(415, 580);
+      ctx.lineTo(425, 555);
+      ctx.lineTo(415,430);
+      ctx.fill();
+
+      /*upper lip*/
+        ctx.fillStyle = "rgb(179 118 121)";
+      ctx.beginPath();
+      ctx.moveTo(300, 660);
+      ctx.bezierCurveTo(320, 650, 370, 650, 385, 655);
+      ctx.bezierCurveTo(410, 640, 450, 651, 425, 648);
+      ctx.moveTo(433, 648)
+      ctx.bezierCurveTo(410, 668, 325, 670, 300, 660);
+      ctx.fill();
 
 /*
 

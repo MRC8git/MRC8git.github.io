@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas Function practice</title>
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+  <canvas width=800 height=800 id="myCanvas" ></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillRect(100, 100, 600, 600);
+
+      function fillRectWithColor(x,y,width,height,color){
+
+        ctx.fillStyle=color;
+        ctx.fillRect(x,y,width,height);
+
+        }
+
+   fillRectWithColor(100,100,100,100,"green");
+   fillRectWithColor(600,600,100,100,"F3564A");
+
+   function fillCircleWithColor(x,y,r,color) {
+   ctx.fillStyle=color;
+   ctx.beginPath();
+   ctx.arc(x,y,r,0,2*Math.PI);
+   ctx.fill();
+}
+
+
+
+</script>
+    
+</body>
+</head>
+</html>
