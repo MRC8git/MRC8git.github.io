@@ -12,20 +12,47 @@ canvas {
 </head>
 
 <body>
-  <canvas id="canvas" width="800" height="800"></canvas>
+  <canvas id="canvas" width="800" height="1000"></canvas>
     <script>
       function draw() { 
         const canvas = document.getElementById("canvas");
         const ctx = canvas.getContext("2d");
 
+        /*hair left*/
+      ctx.fillStyle = "rgb(51 32 8)";
+      ctx.beginPath();
+      ctx.bezierCurveTo(145, 350, 50, 425, 60, 500);
+      ctx.bezierCurveTo(70, 700, 50, 740, 30, 800);
+      ctx.lineTo(400, 795);
+      ctx.lineTo(300, 780);
+      ctx.lineTo(250, 750);
+      ctx.lineTo(200, 700);
+      ctx.lineTo(150, 600);
+      ctx.lineTo(130, 400);
+      ctx.fill();
+
+        /*hair right*/
+      ctx.beginPath();
+      ctx.bezierCurveTo(720, 420, 740, 450, 730, 500);
+      ctx.bezierCurveTo(715, 530, 760, 640, 750, 640);
+      ctx.bezierCurveTo(720, 700, 760, 740, 750, 800);
+      ctx.lineTo(400, 795);
+      ctx.lineTo(500, 770);
+      ctx.lineTo(600, 700);
+      ctx.lineTo(635, 600);
+      ctx.lineTo(650, 500);
+      ctx.lineTo(650, 400);
+      ctx.lineTo(640, 350);
+      ctx.fill();
+
         /*big part of hat*/  
       ctx.fillStyle = "rgb(133 132 127)";
       ctx.beginPath();
-      ctx.moveTo(130, 250);
-      ctx.bezierCurveTo(200, 150, 400, 75, 580, 150);
-      ctx.moveTo(580, 150)
+      ctx.moveTo(125, 280);
+      ctx.bezierCurveTo(200, 150, 400, 50, 580, 150);
+      ctx.moveTo(575, 148)
       ctx.bezierCurveTo(600, 150, 680, 250, 700, 400);
-      ctx.lineTo(130, 250);
+      ctx.lineTo(125, 280);
       ctx.fill();
 
         /*forehead*/  
@@ -45,7 +72,43 @@ canvas {
       ctx.lineTo(650, 400);
       ctx.fill();
 
+        /*hat rim left*/
+      ctx.fillStyle = "rgb(79 61 50)";
+      ctx.beginPath();
+      ctx.moveTo(50, 350);
+      ctx.bezierCurveTo(80, 285, 130, 225, 250, 210);
+      ctx.bezierCurveTo(270, 210, 340, 200, 455, 210);
+      ctx.bezierCurveTo(400, 220, 320, 235, 290, 250);
+      ctx.bezierCurveTo(220, 290, 200, 300, 160, 340);
+      ctx.bezierCurveTo(150, 350, 140, 355, 130, 355);
+      ctx.bezierCurveTo(150, 350, 70, 380, 50, 350);
+      ctx.fill();
+
+       /*hat rim right*/
+      ctx.fillStyle = "rgb(158 159 144)";
+      ctx.beginPath();
+      ctx.moveTo(455, 210);
+      ctx.bezierCurveTo(480, 215, 510, 230, 540, 240);
+      ctx.bezierCurveTo(600, 270, 635, 290, 690, 395);
+      ctx.bezierCurveTo(640, 400, 630, 400, 590, 310);
+      ctx.bezierCurveTo(580, 300, 520, 240, 455, 210);
+      ctx.fill();
+
+      /*hat rim line*/
+      ctx.strokeStyle = "rgb(56 54 50)";
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.moveTo(50, 350);
+      ctx.bezierCurveTo(80, 285, 130, 225, 250, 210);
+      ctx.bezierCurveTo(270, 210, 340, 200, 455, 210);
+      ctx.moveTo(690, 395);
+      ctx.bezierCurveTo(640, 400, 630, 400, 590, 310);
+      ctx.bezierCurveTo(580, 300, 520, 240, 455, 210);
+      ctx.stroke();
+
         /*mid face & chin*/  
+        ctx.lineWidth = 1;      
+      ctx.fillStyle = "rgb(227 185 127 / 80%)";
       ctx.beginPath();
       ctx.moveTo(650, 400);
       ctx.lineTo(650, 500);
@@ -82,7 +145,8 @@ canvas {
       ctx.fillStyle = "rgb(204 166 153 )";
       ctx.beginPath();
       ctx.moveTo(200, 430);
-      ctx.lineTo(325, 425);
+      ctx.bezierCurveTo(210, 415, 250, 400, 300, 400);
+      ctx.bezierCurveTo(300, 400, 300, 400, 325, 425);
       ctx.lineTo(300, 450);
       ctx.lineTo(250, 450);
       ctx.lineTo(200, 430);
@@ -93,7 +157,8 @@ canvas {
       ctx.strokeWidth = "3px";
       ctx.beginPath();
       ctx.moveTo(200, 430);
-      ctx.lineTo(325, 425);
+      ctx.bezierCurveTo(210, 415, 250, 400, 300, 400);
+      ctx.bezierCurveTo(300, 400, 300, 400, 325, 425);
       ctx.lineTo(300, 450);
       ctx.lineTo(250, 450);
       ctx.lineTo(200, 430);
@@ -104,6 +169,7 @@ canvas {
       ctx.beginPath();
       ctx.moveTo(465, 430);
       ctx.lineTo(500, 400);
+      ctx.bezierCurveTo(530, 395, 550, 405, 540, 400);
       ctx.lineTo(590, 420);
       ctx.lineTo(550, 445);
       ctx.lineTo(500, 450);
@@ -116,8 +182,9 @@ canvas {
       ctx.beginPath();
       ctx.moveTo(465, 430);
       ctx.lineTo(500, 400);
+      ctx.bezierCurveTo(530, 395, 550, 405, 540, 400);
       ctx.lineTo(590, 420);
-      ctx.lineTo(550, 445);
+      ctx.lineTo(550, 448);
       ctx.lineTo(500, 450);
       ctx.lineTo(465, 430);
       ctx.stroke();
@@ -156,114 +223,150 @@ canvas {
       ctx.lineTo(415,430);
       ctx.fill();
 
+       /*lower nose left*/
+      ctx.fillStyle = "rgb(202 167 115 / 80%)";
+      ctx.beginPath();
+      ctx.moveTo(350, 500);
+      ctx.arcTo(260, 640, 380, 590, 30);
+      ctx.fill();
+
+      /*nostril left*/
+      ctx.fillStyle = "rgb(102 64 48)";
+      ctx.beginPath();
+      ctx.moveTo(330, 550);
+      ctx.rect(328, 589, 25, 10);
+      ctx.lineTo(320,600);
+      ctx.fill();
+
+      /*lower nose right*/
+      ctx.fillStyle = "rgb(202 167 115 / 80%)";
+      ctx.beginPath();
+      ctx.moveTo(420, 500);
+      ctx.arcTo(490, 665, 400, 600, 30);
+      ctx.fill();
+
+      /*nostril right*/
+      ctx.fillStyle = "rgb(102 64 48)";
+      ctx.beginPath();
+      ctx.moveTo(410, 550);
+      ctx.rect(405, 589, 25, 10);
+      ctx.lineTo(320,600);
+      ctx.fill();
+
       /*upper lip*/
-        ctx.fillStyle = "rgb(179 118 121)";
+      ctx.fillStyle = "rgb(179 118 121)";
       ctx.beginPath();
       ctx.moveTo(300, 660);
       ctx.bezierCurveTo(320, 650, 370, 650, 385, 655);
-      ctx.bezierCurveTo(410, 640, 450, 651, 425, 648);
-      ctx.moveTo(433, 648)
-      ctx.bezierCurveTo(410, 668, 325, 670, 300, 660);
+      ctx.bezierCurveTo(410, 640, 450, 651, 475, 648);
+      ctx.moveTo(475, 648)
+      ctx.bezierCurveTo(450, 668, 325, 670, 300, 660);
       ctx.fill();
 
-/*
+        /*lower lip*/
+      ctx.fillStyle = "rgb(179 118 121)";
+      ctx.beginPath();
+      ctx.moveTo(300, 660);
+      ctx.bezierCurveTo(320, 690, 370, 695, 400, 695);
+      ctx.bezierCurveTo(420, 690, 455, 670, 475, 650);
+      ctx.moveTo(475, 650)
+      ctx.bezierCurveTo(425, 669, 325, 670, 300, 660);
+      ctx.fill();    
 
-ctx.fillStyle = "rgb(60 37 29)";
-ctx.beginPath();
-  ctx.moveTo(50, 350);
-  ctx.bezierCurveTo(100, 300, 200, 225, 250, 210);  
-  ctx.fill();
-
-*/
 
 
+
+
+
+
+ /* grid
         ctx.beginPath();
         ctx.moveTo(50,0)
-        ctx.lineTo(50, 800);
+        ctx.lineTo(50, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
         ctx.beginPath();
         ctx.moveTo(100,0)
-        ctx.lineTo(100, 800);
+        ctx.lineTo(100, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
         ctx.beginPath();
         ctx.moveTo(150,0)
-        ctx.lineTo(150, 800);
+        ctx.lineTo(150, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(200,0)
-        ctx.lineTo(200, 800);
+        ctx.lineTo(200, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(250,0)
-        ctx.lineTo(250, 800);
+        ctx.lineTo(250, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(300,0)
-        ctx.lineTo(300, 800);
+        ctx.lineTo(300, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(350,0)
-        ctx.lineTo(350, 800);
+        ctx.lineTo(350, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(400,0)
-        ctx.lineTo(400, 800);
+        ctx.lineTo(400, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(450,0)
-        ctx.lineTo(450, 800);
+        ctx.lineTo(450, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(500,0)
-        ctx.lineTo(500, 800);
+        ctx.lineTo(500, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(550,0)
-        ctx.lineTo(550, 800);
+        ctx.lineTo(550, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(600,0)
-        ctx.lineTo(600, 800);
+        ctx.lineTo(600, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(650,0)
-        ctx.lineTo(650, 800);
+        ctx.lineTo(650, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(700,0)
-        ctx.lineTo(700, 800);
+        ctx.lineTo(700, 1000);
         ctx.strokeStyle = "blue";
         ctx.stroke();
 
                 ctx.beginPath();
         ctx.moveTo(750,0)
-        ctx.lineTo(750, 800);
+        ctx.lineTo(750, 1000);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
 
@@ -358,6 +461,7 @@ ctx.beginPath();
         ctx.lineTo(800, 750);
         ctx.strokeStyle = "lightblue";
         ctx.stroke();
+        */
 }
 draw();
 
