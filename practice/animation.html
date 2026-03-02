@@ -11,27 +11,26 @@ canvas {
 </head>
 
 <body>
-    <canvas id="myCanvas" width = 800 height=800></canvas>
-
-
+    <canvas width= 800 height= 800 id="myCanvas" ></canvas>
     <script>
-    
-        const canvas = document.getElementById("myCanvas") 
-            const c =canvas.getContext("2d");
+        const canvas = document.getElementById("myCanvas"); 
+            const ctx = canvas.getContext("2d");
 
-    
 
-    let x = 1;
+        let boi = 1;
 
         function animate(){
-        x = x + 1;
+        
+        boi = boi + 1;
 
-        c.clearRect(0,0,800,800);
-        c.fillRect(x,100,100,100);
+
+        ctx.clearRect(0,0,800,800);
+        ctx.fillRect(boi,100,100,100);
         requestAnimationFrame(animate);
         }
 
         animate();
+
 
     </script>
 </body>

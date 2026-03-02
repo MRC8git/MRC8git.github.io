@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Parad </title>
+    <meta charset="utf-8">
+<style>
+canvas {
+  border: 1px solid rgb(0, 0, 0);
+  background: #ffffff;
+}
+</style>
+</head>
+
+<body>
+    <canvas width= 1200 height= 400 id="myCanvas" ></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas"); 
+            const ctx = canvas.getContext("2d");
+
+
+        let x = 0;
+        let time = 0
+        let speed = 5;
+
+        function animate(){
+        time = time + 1
+        
+        x = x + speed;
+
+        if (x > 1500) {
+            x = 0;
+        }
+
+        ctx.beginPath();
+        ctx.clearRect(0,0,1200,800);
+        ctx.fillStyle = "darkOrange";
+        ctx.arc(x, 300, 50, 0, Math.PI * 2, true);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(x-30, 260)
+        ctx.lineTo(x-15, 225)
+        ctx.lineTo(x-5, 250)
+        ctx.fill();
+
+         ctx.beginPath();
+        ctx.moveTo(x+30, 260)
+        ctx.lineTo(x+15, 225)
+        ctx.lineTo(x+5, 250)
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.arc(x-20, 290, 15, 0, Math.PI * 2, true);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.arc(x+20, 290, 15, 0, Math.PI * 2, true);
+        ctx.fill();
+
+        requestAnimationFrame(animate);
+        }
+
+        animate();
+
+
+    </script>
+</body>
+
+</html>
+
