@@ -25,23 +25,28 @@ canvas {
         let x2 = x-600;
         let speed2 = 7;
 
+        let x3 = x2-600;
+        let speed3 = 8.7;
+
 
         function animate(){
         time = time + 1
         
         x = x + speed;
         x2 = x2 + speed2;
+        x3 = x3 + speed3;
 
          if (x > 1500) {
             x = 0;
             x2 = x -600;
+            x3 = x2-600;
         }
 
         if (x2 > 1500) {
             x2 = 0;
         }
 
-
+        /* cat */
         ctx.beginPath();
         ctx.clearRect(0,0,1200,800);
         ctx.fillStyle = "darkOrange";
@@ -81,11 +86,55 @@ canvas {
         ctx.bezierCurveTo(x2+20, 275, x2+30, 290, x2+20, 305)
         ctx.bezierCurveTo(x2+20, 305, x2+10, 290, x2+20, 275)
         ctx.fill();
+        /* cat done */
 
+        /* yarn ball */
         ctx.beginPath();
         ctx.fillStyle = "red";
         ctx.arc(x, 325, 25, 0, Math.PI * 2, true);
         ctx.fill();
+        /* yarn ball done */
+
+         /* minion boi */
+        ctx.beginPath();
+        ctx.fillStyle = "gold";
+        ctx.arc(x3, 250, 50, 0, Math.PI * 2, true);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "white";
+        ctx.bezierCurveTo(x3, 225, x3+40, 250, x3, 275)
+        ctx.bezierCurveTo(x3, 275, x3-40, 250, x3, 225)
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.bezierCurveTo(x3, 235, x3+30, 250, x3, 265)
+        ctx.bezierCurveTo(x3, 265, x3-30, 250, x3, 235)
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "skyBlue";
+        ctx.rect(x3-50, 290, 100, 200);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "Blue";
+        ctx.moveTo(x3-30, 310)
+        ctx.lineTo(x3+100, 330);
+        ctx.lineTo(x3+95, 350);
+        ctx.lineTo(x3-5, 330);
+        ctx.fill();
+
+         ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.moveTo(x3-30, 235)
+        ctx.lineTo(x3+15, 200);
+        ctx.lineTo(x3+20, 215);
+        ctx.lineTo(x3-25, 250);
+        ctx.fill();
+
+        /* minion boi done */
 
 
         requestAnimationFrame(animate);
