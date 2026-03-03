@@ -17,59 +17,76 @@ canvas {
         const canvas = document.getElementById("myCanvas"); 
             const ctx = canvas.getContext("2d");
 
+        let time = 0
 
         let x = 0;
-        let time = 0
         let speed = 5;
+
+        let x2 = x-600;
+        let speed2 = 7;
+
 
         function animate(){
         time = time + 1
         
         x = x + speed;
+        x2 = x2 + speed2;
 
-        if (x > 1500) {
+         if (x > 1500) {
             x = 0;
+            x2 = x -600;
         }
+
+        if (x2 > 1500) {
+            x2 = 0;
+        }
+
 
         ctx.beginPath();
         ctx.clearRect(0,0,1200,800);
         ctx.fillStyle = "darkOrange";
-        ctx.arc(x, 300, 50, 0, Math.PI * 2, true);
+        ctx.arc(x2, 300, 50, 0, Math.PI * 2, true);
         ctx.fill();
 
         ctx.beginPath();
-        ctx.moveTo(x-30, 260)
-        ctx.lineTo(x-15, 225)
-        ctx.lineTo(x-5, 250)
+        ctx.moveTo(x2-30, 260)
+        ctx.lineTo(x2-15, 225)
+        ctx.lineTo(x2-5, 250)
         ctx.fill();
 
          ctx.beginPath();
-        ctx.moveTo(x+30, 260)
-        ctx.lineTo(x+15, 225)
-        ctx.lineTo(x+5, 250)
+        ctx.moveTo(x2+30, 260)
+        ctx.lineTo(x2+15, 225)
+        ctx.lineTo(x2+5, 250)
         ctx.fill();
 
         ctx.beginPath();
         ctx.fillStyle = "lightGreen";
-        ctx.arc(x-20, 290, 15, 0, Math.PI * 2, true);
+        ctx.arc(x2-20, 290, 15, 0, Math.PI * 2, true);
         ctx.fill();
 
         ctx.beginPath();
         ctx.fillStyle = "black";
-        ctx.bezierCurveTo(x-20, 275, x-30, 290, x-20, 305)
-        ctx.bezierCurveTo(x-20, 305, x-10, 290, x-20, 275)
+        ctx.bezierCurveTo(x2-20, 275, x2-30, 290, x2-20, 305)
+        ctx.bezierCurveTo(x2-20, 305, x2-10, 290, x2-20, 275)
         ctx.fill();
 
         ctx.beginPath();
         ctx.fillStyle = "lightGreen";
-        ctx.arc(x+20, 290, 15, 0, Math.PI * 2, true);
+        ctx.arc(x2+20, 290, 15, 0, Math.PI * 2, true);
         ctx.fill();
 
          ctx.beginPath();
         ctx.fillStyle = "black";
-        ctx.bezierCurveTo(x+20, 275, x+30, 290, x+20, 305)
-        ctx.bezierCurveTo(x+20, 305, x+10, 290, x+20, 275)
+        ctx.bezierCurveTo(x2+20, 275, x2+30, 290, x2+20, 305)
+        ctx.bezierCurveTo(x2+20, 305, x2+10, 290, x2+20, 275)
         ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "red";
+        ctx.arc(x, 325, 25, 0, Math.PI * 2, true);
+        ctx.fill();
+
 
         requestAnimationFrame(animate);
         }
