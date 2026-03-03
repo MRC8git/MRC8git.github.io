@@ -49,7 +49,7 @@ canvas {
         /* cat */
         ctx.beginPath();
         ctx.clearRect(0,0,1200,800);
-        ctx.fillStyle = "darkOrange";
+        ctx.fillStyle = "#EEBF68";
         ctx.arc(x2, 300, 50, 0, Math.PI * 2, true);
         ctx.fill();
 
@@ -66,7 +66,7 @@ canvas {
         ctx.fill();
 
         ctx.beginPath();
-        ctx.fillStyle = "lightGreen";
+        ctx.fillStyle = "#B1F9AA";
         ctx.arc(x2-20, 290, 15, 0, Math.PI * 2, true);
         ctx.fill();
 
@@ -77,7 +77,7 @@ canvas {
         ctx.fill();
 
         ctx.beginPath();
-        ctx.fillStyle = "lightGreen";
+        ctx.fillStyle = "#B1F9AA";
         ctx.arc(x2+20, 290, 15, 0, Math.PI * 2, true);
         ctx.fill();
 
@@ -85,6 +85,13 @@ canvas {
         ctx.fillStyle = "black";
         ctx.bezierCurveTo(x2+20, 275, x2+30, 290, x2+20, 305)
         ctx.bezierCurveTo(x2+20, 305, x2+10, 290, x2+20, 275)
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "#E06861";
+        ctx.moveTo(x2+15, 310)
+        ctx.lineTo(x2, 335)
+        ctx.lineTo(x2-15, 310)
         ctx.fill();
         /* cat done */
 
@@ -120,10 +127,10 @@ canvas {
 
         ctx.beginPath();
         ctx.fillStyle = "Blue";
-        ctx.moveTo(x3-30, 310)
+        ctx.moveTo(x3-20, 310)
         ctx.lineTo(x3+100, 330);
         ctx.lineTo(x3+95, 350);
-        ctx.lineTo(x3-5, 330);
+        ctx.lineTo(x3-25, 330);
         ctx.fill();
 
          ctx.beginPath();
