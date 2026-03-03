@@ -50,13 +50,25 @@ canvas {
         ctx.fill();
 
         ctx.beginPath();
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "lightGreen";
         ctx.arc(x-20, 290, 15, 0, Math.PI * 2, true);
         ctx.fill();
 
         ctx.beginPath();
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
+        ctx.bezierCurveTo(x-20, 275, x-30, 290, x-20, 305)
+        ctx.bezierCurveTo(x-20, 305, x-10, 290, x-20, 275)
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.fillStyle = "lightGreen";
         ctx.arc(x+20, 290, 15, 0, Math.PI * 2, true);
+        ctx.fill();
+
+         ctx.beginPath();
+        ctx.fillStyle = "black";
+        ctx.bezierCurveTo(x+20, 275, x+30, 290, x+20, 305)
+        ctx.bezierCurveTo(x+20, 305, x+10, 290, x+20, 275)
         ctx.fill();
 
         requestAnimationFrame(animate);
