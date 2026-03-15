@@ -20,7 +20,7 @@ graph TD;
     Portable-->Bathroom;
 ```
 
-The player starts on the bus, and then is directed into the Commons. T
+The player starts in the House, and then is directed into the Commons. T
 They can explore, but must eventually make their way to rm511.
 
 ## Story
