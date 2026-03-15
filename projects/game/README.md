@@ -1,10 +1,8 @@
-# Chris Needs Coffee
+# Find The Floof
 
 ## Setting
 
-This game takes place in a mirror neighborhood of my own. I tried to 
-faithfully recreate it, with the exception of moving the 
-library to the first floor.
+This game takes place in a mirror neighborhood of my own. I kept the rough layout of my neighborhood, but changed street names around and made a few things closer together/farther apart.
 
 ## Map
 
@@ -20,8 +18,7 @@ graph TD;
     Portable-->Bathroom;
 ```
 
-The player starts in the House, and then is directed into the Commons. T
-They can explore, but must eventually make their way to rm511.
+The player starts in the House, and is then provided with options about what to do/where to go. The end goal is the cul de sac past Dogwood Park, but there are plenty of decoys along the way--so the play must work to find the right path!
 
 ## Story
 
@@ -36,7 +33,7 @@ Some moves (like reading a book in the library) cost extra time.
 ## Global Variables
 
 The most important variables are
-`haveCup` and `cupIsFull`, both
+`kids` and `cupIsFull`, both
 booleans that track progress in the
 story. Depending on these two variables,
 some rooms will display different things. For example, if you walk into the

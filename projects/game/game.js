@@ -40,7 +40,7 @@ function neighborHouse() {
         "\n\n> Ring the (doorbell)" +
         "\n\n> Go to (House)" +
         "\n\n> Take (Shortcut)" +
-        "\n\n> ");
+        "\n\n> Head down the (street)");
     
     function processInput(input){
         if (input.toLowerCase() === "doorbell") {
@@ -87,10 +87,11 @@ function neighbordrivewayk() {
 function fourthOak() {
 if (kids == true){
     clear();
-    print("You are on the corner of Fourth St & Oak Rd!");
+    print("You are on the corner of Fourth St & Oak Rd!" +
+        "\n\n Your friends tell you they think they saw her go down Fourth St");
     print("\nWhat do you want to do next?" +
         "\n\n> Back to neighbor kid's (driveway)" +
-        "\n\n> Keep going to the next (corner)");
+        "\n\n> Keep going to the next (corner) on Fourth St");
     
     function processInput(input){
         if (input.toLowerCase() === "driveway") {
@@ -104,7 +105,8 @@ if (kids == true){
     }
 } else {
         clear();
-    print("You are on the corner of Fourth St & Oak Rd!");
+    print("You are on the corner of Fourth St & Oak Rd!" +
+            "\n\n You still hear that noise, but you feel like the flash of fur you saw was headed in the other direction...");
     print("\nWhat do you want to do next?" +
         "\n\n> Keep going to the next (corner)" +
         "\n\n> Head back to the (house)");
@@ -112,7 +114,9 @@ if (kids == true){
     function processInput(input){
         if (input.toLowerCase() === "corner") {
             fourthNettle();
-        } else {
+        } else if (input.toLowerCase() === "house") {
+            house();
+        }else {
             stayHere();
             waitThenCall(fourthOak);
         }
@@ -154,7 +158,7 @@ function fourthNettle() {
     function processInput(input){
         if (input.toLowerCase() === "oak") {
             fourthOak();
-        } else if (input.toLowerCase() === "Continue") {
+        } else if (input.toLowerCase() === "continue") {
             continueOn();
         } else {
             stayHere();
@@ -172,7 +176,8 @@ function doorbell() {
     print("\nWhat do you want to do next? Here are your options:" +
         "\n\n> Ring the (doorbell) again" +
         "\n\n> Go to (House)" +
-        "\n\n> Take (Shortcut)");
+        "\n\n> Take (Shortcut)" +
+        "\n\n> Head down the (street)");
 
      function processInput(input){
         if (input.toLowerCase() === "doorbell") {
@@ -181,6 +186,8 @@ function doorbell() {
             house();
         } else if (input.toLowerCase() === "shortcut") {
             neighbordrivewayk();
+        } else if (input.toLowerCase() === "street") {
+            fourthOak();
         } else {
             stayHere();
             waitThenCall(neighborHouse);
@@ -204,7 +211,7 @@ function continueOn() {
             dogwoodPark();
         } else {
             stayHere();
-            waitThenCall(fourthNettle);
+            waitThenCall(continueOn);
         }
     }
     waitForInput(processInput);
