@@ -57,7 +57,11 @@ function waitThenCall(target){
     setTimeout(target,2000);
 }
 
+function waitThenPrint(target){
+    setTimeout(target,2000);
+}
+
 function stayHere(){
-    print("\nsorry, I don't understand your input. I'll assume you " +
+    print("\nSorry, I don't understand your input. I'll assume you " +
         "want to stay here");
 }
