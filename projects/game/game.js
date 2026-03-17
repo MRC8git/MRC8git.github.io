@@ -292,7 +292,7 @@ function ouchyOw() {
         if (input.toLowerCase() === "beginning") {
             house();
         }  else if (input.toLowerCase() === "done") {
-            gameActive= false;
+            waitThenCall(gameOver);
         } else {
             stayHere();
             waitThenCall(ouchyOw);
@@ -378,6 +378,21 @@ function start(){
 
     function processInput(input){
             house();
+    }
+    waitForInput(processInput);
+}
+
+function gameOver(){
+    print("Thank you for playing, I hope you had fun!" +
+          "\n\n You may (go back) to the beginning if you wish, but you have to refresh the page if you want to play again");
+
+    function processInput(input){
+          if (input.toLowerCase() === "go back") {
+            start();
+        } else {
+            stayHere();
+            waitThenCall(gameOver);
+        }
     }
     waitForInput(processInput);
 }
