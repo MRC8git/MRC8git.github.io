@@ -196,10 +196,9 @@ function derekInfo() {
 function followDerek() {
     clear();
     print("You are on Eigth St, between Nettle Ln & Quokka Rd!" +
-        "\n\n   You followed Derek around the corner, and you finally see The Floof! She sits when you tell her to, but then you get too close and she bolts off in the direction of Dogwood Park");
+        "\n\n   You followed Derek around the corner, and you finally see The Floof! She sits when you tell her to, but then you get too close and she bolts off in the direction of Dogwood Park...");
     print("\nWhat do you want to do next?" +
         "\n\n> (Chase) The Floof" +
-        "\n\n> Follow (Derek)" +
         "\n\n> Run (back) to the corner Fourth & Nettle");
     
     function processInput(input){
@@ -218,20 +217,66 @@ function followDerek() {
 function floofChase1() {
     clear();
     print("You are at the entrance to Dogwood Park!" +
-        "\n\n   You watch as the floof ");
+        "\n\n   You watch as the floof runs into the park and disappears down one of the paths...");
     print("\nWhat do you want to do next?" +
         "\n\n> (Chase) The Floof" +
-        "\n\n> Follow (Derek)" +
         "\n\n> Run (back) to the corner Fourth & Nettle");
     
     function processInput(input){
         if (input.toLowerCase() === "chase") {
-            floofChase1();
+            floofChase2();
         } else if (input.toLowerCase() === "back") {
-            fourthNettle();
+            followDerek();
         } else {
             stayHere();
             waitThenCall(floofChase1);
+        }
+    }
+      waitForInput(processInput);
+}
+
+function floofChase2() {
+    clear();
+    print("You are inside of Dogwood Park" +
+        "\n\n   You see the floof run down a gravel path and out through another entrance of the park that you've never gone through before." +
+        " In the chaos of the chase, you forgot to put on shoes so gravel path=ouch. There is another path that will lead to the same place, and it doesn't have gravel---but it does have a weird smell...");
+    print("\nWhat do you want to do next?" +
+        "\n\n> Screw it (gravel) path" +
+        "\n\n> Smelly, schmelly, I ain't taking no gravel pat, (dirt) is the way to go!" +
+        "\n\n> Head (back) to the entrance of the park");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "gravel") {
+            ouchyOw();
+        } else if (input.toLowerCase() === "dirt") {
+            stinkySchmelly();
+        }  else if (input.toLowerCase() === "back") {
+            floofChase1();
+        } else {
+            stayHere();
+            waitThenCall(floofChase2);
+        }
+    }
+      waitForInput(processInput);
+}
+
+function ouchyOw() {
+    clear();
+    print("You are inside of Dogwood Park" +
+        "\n\n   You see the floof run down a gravel path and out through another entrance of the park that you've never gone through before." +
+        " In the chaos of the chase, you forgot to put on shoes so gravel path=ouch. There is another path that will lead to the same place, and it doesn't have gravel---but it does have a weird smell...");
+    print("\nWhat do you want to do next?" +
+        "\n\n> RUn back over the (gravel) path" +
+        "");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "gravel") {
+            floofChase1();
+        } else if (input.toLowerCase() === "dirt") {
+            stinkySchmelly();
+        }else {
+            stayHere();
+            waitThenCall(ouchyOw);
         }
     }
       waitForInput(processInput);
