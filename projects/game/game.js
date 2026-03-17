@@ -214,6 +214,7 @@ function followDerek() {
     }
       waitForInput(processInput);
 }
+
 function floofChase1() {
     clear();
     print("You are at the entrance to Dogwood Park!" +
