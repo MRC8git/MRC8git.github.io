@@ -12,10 +12,10 @@ graph TD;
     House-->NeighborHouse;
     House-->NeighborDriveway;
     House-->StreetEnd;
-    Commons-->Outside;
-    Outside-->Portable;
-    Portable-->rm511;
-    Portable-->Bathroom;
+    NeighborDriveway-->StreetEnd;
+    StreetEnd-->FourthOak;
+    FourthOak-->FourthNettle;
+    FourthNettle-->Bathroom;
 ```
 
 The player starts in the House, and is then provided with options about what to do/where to go. The end goal is the cul de sac past Dogwood Park, but there are plenty of decoys along the way--so the play must work to find the right path!
