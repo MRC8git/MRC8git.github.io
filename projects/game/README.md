@@ -10,8 +10,8 @@ This game takes place in a mirror neighborhood of my own. I kept the rough layou
 graph TD;
     Start(((Start)))-->House;
     House-->NeighborHouse;
-    House-->NeighborDriveway;
     House-->StreetEnd;
+    House-->NeighborDriveway;
     NeighborHouse-->StreetEnd
     NeighborDriveway-->StreetEnd;
     StreetEnd-->FourthOak;
