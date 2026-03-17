@@ -250,7 +250,7 @@ function floofChase2() {
             ouchyOw();
         } else if (input.toLowerCase() === "dirt") {
             stinkySchmelly();
-        }  else if (input.toLowerCase() === "back") {
+        } else if (input.toLowerCase() === "back") {
             floofChase1();
         } else {
             stayHere();
@@ -260,22 +260,40 @@ function floofChase2() {
       waitForInput(processInput);
 }
 
-function ouchyOw() {
+function stinkySchmelly() {
     clear();
-    print("You are at the entrance of a cul de sac that you've never seen before" +
-        "\n\n   You see the floof run dowwn the center of the street and into someone's backyard, past an old man mowing his lawn." +
-        "");
+    print("You are on the schmelly path" +
+        "\n\n   Yeah, no. Looks like a squirrel died and is rotting here...");
     print("\nWhat do you want to do next?" +
-        "\n\n> RUn back over the (gravel) path" +
-        "");
+        "\n\n> Seems like (gravel), is the way to go");
     
     function processInput(input){
         if (input.toLowerCase() === "gravel") {
-            floofChase1();
-            haveFloof = true;
-        } else if (input.toLowerCase() === "dirt") {
-            stinkySchmelly();
-        }else {
+            floofChase2();
+        } else {
+            stayHere();
+            waitThenCall(stinkySchmelly);
+        }
+    }
+      waitForInput(processInput);
+}
+
+function ouchyOw() {
+    haveFloof= true;
+    clear();
+    print("You are in a cul de sac that you've never seen before" +
+        "\n\n   You see the floof run dowwn the center of the street and into someone's backyard, past an old man mowing his lawn. You follow her, running a few laps around some houses. She suprises you by jumping over a four foot stone retaining wall" +
+        "\n Eventually your coming back around, so that you are facing Dogwood Park, and Penny runs into the street this time. Some neighbor woman comes up on the sidewalk and starts distracting penny---thank goodness it allows you to get behind her and grab her!!!(a slow-moving car stopped 1 foot away form her after seeing you run into the street.");
+    print("\nYou Won! Congrats! What do you want to do now?" +
+        "\n\n> Head back to the (beginning) and explore" +
+        "\n\n> That was fun, I'm (done)");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "beginning") {
+            house();
+        }  else if (input.toLowerCase() === "done") {
+            gameActive= false;
+        } else {
             stayHere();
             waitThenCall(ouchyOw);
         }
