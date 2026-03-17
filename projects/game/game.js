@@ -371,6 +371,7 @@ function followParker1() {
 //very start. For this simple example, any input will bring you
 //to locationA
 function start(){
+    clear();
     print("Welcome to Find The Floof! This is a text based game designed around a time my dog escaped." 
         + "\n\nStarting in the House, discover and explore locations by following the (prompts), to Find The Floof(your dog)! " 
         + "\n\nYou may take a few wrong turns, but don't worry--you can always go back! I even left some clues to help you find your way. Have fun, I wish you luck..."
@@ -383,6 +384,7 @@ function start(){
 }
 
 function gameOver(){
+    clear();
     print("Thank you for playing, I hope you had fun!" +
           "\n\n You may (go back) to the beginning if you wish, but you have to refresh the page if you want to play again");
 
