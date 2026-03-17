@@ -14,8 +14,7 @@ graph TD;
     House-->|Shortcut|NeighborDriveway;
     NeighborHouse-->StreetEnd
     NeighborDriveway-->StreetEnd;
-    StreetEnd-->FourthOak;
-    FourthOak-->FourthNettle;
+    StreetEnd-->FourthNettle;
     FourthNettle-->FouthQuokka;
     FourthNettle-->EigthSt;
     EigthSt-->DogwoodEntrance;
