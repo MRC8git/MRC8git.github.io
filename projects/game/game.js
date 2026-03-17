@@ -282,8 +282,7 @@ function ouchyOw() {
     haveFloof= true;
     clear();
     print("You are in a cul de sac that you've never seen before" +
-        "\n\n   You see the floof run dowwn the center of the street and into someone's backyard, past an old man mowing his lawn. You follow her, running a few laps around some houses. She suprises you by jumping over a four foot stone retaining wall" +
-        "\n Eventually your coming back around, so that you are facing Dogwood Park, and Penny runs into the street this time. Some neighbor woman comes up on the sidewalk and starts distracting penny---thank goodness it allows you to get behind her and grab her!!!(a slow-moving car stopped 1 foot away form her after seeing you run into the street.");
+        "\n\n   You see the floof run dowwn the center of the street and into someone's backyard, past an old man mowing his lawn. You follow her, running a few laps around some houses. She suprises you by jumping over a four foot stone retaining wall. Eventually your coming back around, so that you are facing Dogwood Park, and Penny runs into the street this time. Some neighbor woman comes up on the sidewalk and starts distracting penny---thank goodness it allows you to get behind her and grab her!!!(a slow-moving car stopped 1 foot away form her after seeing you run into the street.");
     print("\nYou Won! Congrats! What do you want to do now?" +
         "\n\n> Head back to the (beginning) and explore" +
         "\n\n> That was fun, I'm (done)");
