@@ -20,7 +20,7 @@ graph TD;
     FourthNettle-->EigthSt;
     EigthSt-->DogwoodEntrance;
     DogwoodEntrance-->GravelPath;
-    DogwoodEntrance-->(((DirtPath)));
+    DogwoodEntrance-->[DirtPath];
 ```
 
 The player starts in the House, and is then provided with options about what to do/where to go. The end goal is the cul de sac past Dogwood Park, but there are plenty of decoys along the way--so the play must work to find the right path!
