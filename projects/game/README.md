@@ -8,10 +8,10 @@ This game takes place in a mirror neighborhood of my own. I kept the rough layou
 
 ```mermaid
 graph TD;
-    bus(((Bus)))-->Commons;
-    Library-->Commons;
-    Box-->Cafeteria;
-    Cafeteria-->Commons;
+    Start(((Start)))-->House;
+    House-->NeighborHouse;
+    House-->NeighborDriveway;
+    House-->StreetEnd;
     Commons-->Outside;
     Outside-->Portable;
     Portable-->rm511;
