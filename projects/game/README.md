@@ -9,7 +9,7 @@ This game takes place in a mirror neighborhood of my own. I kept the rough layou
 ```mermaid
 graph TD;
     Start(((Start)))-->House;
-    House-->NeighborHouse;
+    House-->|Shortcut| NeighborHouse;
     House-->StreetEnd;
     House-->NeighborDriveway;
     NeighborHouse-->StreetEnd
