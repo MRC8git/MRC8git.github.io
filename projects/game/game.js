@@ -262,9 +262,9 @@ function floofChase2() {
 
 function ouchyOw() {
     clear();
-    print("You are inside of Dogwood Park" +
-        "\n\n   You see the floof run down a gravel path and out through another entrance of the park that you've never gone through before." +
-        " In the chaos of the chase, you forgot to put on shoes so gravel path=ouch. There is another path that will lead to the same place, and it doesn't have gravel---but it does have a weird smell...");
+    print("You are at the entrance of a cul de sac that you've never seen before" +
+        "\n\n   You see the floof run dowwn the center of the street and into someone's backyard, past an old man mowing his lawn." +
+        "");
     print("\nWhat do you want to do next?" +
         "\n\n> RUn back over the (gravel) path" +
         "");
@@ -272,6 +272,7 @@ function ouchyOw() {
     function processInput(input){
         if (input.toLowerCase() === "gravel") {
             floofChase1();
+            haveFloof = true;
         } else if (input.toLowerCase() === "dirt") {
             stinkySchmelly();
         }else {

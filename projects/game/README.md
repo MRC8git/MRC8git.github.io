@@ -33,13 +33,10 @@ Some moves (like reading a book in the library) cost extra time.
 ## Global Variables
 
 The most important variables are
-`kids` and `cupIsFull`, both
-booleans that track progress in the
-story. Depending on these two variables,
-some rooms will display different things. For example, if you walk into the
-library without the cup, it will prompt you to
-read. If you walk in with the cup, it will show
-the librarian filling the cup with coffee.
+`kids` and `haveFloof`, which are both
+booleans that are vital to  the
+story. Depending on `kids`,
+some locations will display different situations and prompts. For example, if you go to the corner of Fourth St & Nettle Ln without the having gone through the shortcut, it won't provide an important interaction. Instead, it will lead you on a bit of a goose chase until you reach Dogwood Park, then it will really hint to go back and take the shortcut/check out that area. If you go to the corner of Fourth St & Nettle Ln, having gone through the shortcut, it will provide you with an opportunity to have an important interaction. This interaction leads you in the right direction to win the game. 
 
 I also have numeric variables called `day` and `minute` which keep track of 
 time. `minute` starts at 0 and counts up
