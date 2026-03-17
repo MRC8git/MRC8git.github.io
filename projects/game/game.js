@@ -3,6 +3,7 @@ let gameActive = true; //this variable is required.
 
 //Declare your other global variables here
 var kids = false;
+var haveFloof = false;
 
 //If you need, add any "helper" functions here
 
@@ -129,17 +130,18 @@ function fourthNettle() {
     if (kids == true) {
     clear();
     print("You are on the corner of Fourth St & Nettle Ln!" +
-        "\n\n Many of your friends are right behind you. You see one friend, Derek, further down Nettle Rd.");
+        "\n\n Many of your friends are right behind you. You see one friend, Derek, further down Nettle Rd." +
+        "\nYou briefly see your other friend, Parker zoom past on a bike. He was headed toward Dogwood Park");
     print("\nWhat do you want to do next?" +
         "\n\n> Back to the corner of Fourth & (Oak)" +
         "\n\n> Talk to (Derek)" +
-         "\n\n> Follow (Parker)");
+        "\n\n> See where (Parker) is going");
     
     function processInput(input){
         if (input.toLowerCase() === "oak") {
             fourthOak();
         } else if (input.toLowerCase() === "derek") {
-            followDerek1();
+            derekInfo();
         } else if (input.toLowerCase() === "parker") {
             followParker1();
         } else {
@@ -167,6 +169,71 @@ function fourthNettle() {
     }
 }
     waitForInput(processInput);
+}
+
+function derekInfo() {
+    clear();
+    print("You are on the corner of Fourth St & Nettle Ln!" +
+        "\n\n Many of your friends are right behind you. You see one friend, Derek, further down Nettle Rd." +
+        "\n\n   You call out to Derek, asking about your dog. Derek yells back, saying he saw which way she ran and telling you to follow him...");
+    print("\nWhat do you want to do next?" +
+        "\n\n> Back to the corner of Fourth & (Oak)" +
+        "\n\n> Follow (Derek)");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "oak") {
+            fourthOak();
+        } else if (input.toLowerCase() === "derek") {
+            followDerek();
+        } else {
+            stayHere();
+            waitThenCall(derekInfo);
+        }
+    }
+      waitForInput(processInput);
+}
+
+function followDerek() {
+    clear();
+    print("You are on Eigth St, between Nettle Ln & Quokka Rd!" +
+        "\n\n   You followed Derek around the corner, and you finally see The Floof! She sits when you tell her to, but then you get too close and she bolts off in the direction of Dogwood Park");
+    print("\nWhat do you want to do next?" +
+        "\n\n> (Chase) The Floof" +
+        "\n\n> Follow (Derek)" +
+        "\n\n> Run (back) to the corner Fourth & Nettle");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "chase") {
+            floofChase1();
+        } else if (input.toLowerCase() === "back") {
+            fourthNettle();
+        } else {
+            stayHere();
+            waitThenCall(followDerek);
+        }
+    }
+      waitForInput(processInput);
+}
+function floofChase1() {
+    clear();
+    print("You are at the entrance to Dogwood Park!" +
+        "\n\n   You watch as the floof ");
+    print("\nWhat do you want to do next?" +
+        "\n\n> (Chase) The Floof" +
+        "\n\n> Follow (Derek)" +
+        "\n\n> Run (back) to the corner Fourth & Nettle");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "chase") {
+            floofChase1();
+        } else if (input.toLowerCase() === "back") {
+            fourthNettle();
+        } else {
+            stayHere();
+            waitThenCall(floofChase1);
+        }
+    }
+      waitForInput(processInput);
 }
 
 function doorbell() {
@@ -198,8 +265,8 @@ function doorbell() {
 
 function continueOn() {
     clear();
-    print("You are on the corner of Fourth St & Quokka Ln!" +
-       "\n\n    You still don't see any sign of her, but you remember that noise from earlier...");
+    print("You are on the corner of Fourth St & Quokka Rd!" +
+       "\n\n    You still don't see any sign of her, but you remember that noise from earlier and also wonder if you should find some help...");
     print("\nWhat do you want to do next?" +
         "\n\n> Back to the corner of Fourth & (Nettle)" +
         "\n\n> Look in (Dogwood) park");
@@ -212,6 +279,24 @@ function continueOn() {
         } else {
             stayHere();
             waitThenCall(continueOn);
+        }
+    }
+    waitForInput(processInput);
+}
+
+function followParker1() {
+    clear();
+    print("You are on the corner of Fourth St & Quokka Rd!" +
+       "\n\n    You  don't see any sign of your dog and it seems like Parker was going somewhere else");
+    print("\nWhat do you want to do next?" +
+        "\n\n> Back to the corner of Fourth & (Nettle)");
+    
+    function processInput(input){
+        if (input.toLowerCase() === "nettle") {
+            fourthNettle();
+        } else {
+            stayHere();
+            waitThenCall(followParker1);
         }
     }
     waitForInput(processInput);
