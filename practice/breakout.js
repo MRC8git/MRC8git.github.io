@@ -3,11 +3,26 @@ const ctx = canvas.getContext("2d");
 
 const ballRadius = 10;
 
-let x = Math.random()*800;
-let y = Math.random()*800;
+const balls = [
 
-let dx = 2;
-let dy = -2;
+];
+
+for(let i=0; i <100; 1=1+1){
+const ball = {
+    x: Math.random()*800,
+    y: Math.random()*800,
+    dx: 2,
+    dy: -2
+};
+
+balls.push(ball);
+}
+
+let x2 = Math.random()*800;
+let y2 = Math.random()*800;
+
+let dx2 = 2;
+let dy2 = -2;
 
 const paddleHeight = 10;
 const paddleWidth = 75;
@@ -60,8 +75,15 @@ document.addEventListener("keydown", keyDownHandler);
 document.addEventListener("keyup", keyUpHandler);
 
 function drawBall() {
+    for(const ball of balls) {
   ctx.beginPath();
-  ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+  ctx.arc(ball.x, ball.y, ballRadius, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.closePath();
+    }
+
+  ctx.beginPath();
+  ctx.arc(x2, y2, ballRadius, 0, Math.PI * 2);
   ctx.fill();
   ctx.closePath();
 }
@@ -73,16 +95,28 @@ function drawPaddle() {
 }
 
 function draw() {
+  for(const ball of balls) {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+  
   drawBall();
   drawPaddle();
   drawBricks();
 
-  if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
-    dx = -dx;
+  for(const ball of balls) {
+  if (ball.x + ball.dx > canvas.width - ballRadius || ball.x + ball.dx < ballRadius) {
+    ball.dx = -ball.dx;
   }
-  if (y + dy < ballRadius || y + dy > canvas.height - ballRadius) {
-    dy = -dy;
+  if (ball.y + ball.dy < ballRadius || ball.y + ball.dy > canvas.height - ballRadius) {
+    ball.dy = -ball.dy;
+  }
+  }
+  
+    if (x2 + dx2 > canvas.width - ballRadius || x2 + dx2 < ballRadius) {
+    dx2 = -dx2;
+  }
+  if (y2 + dy2 < ballRadius || y2 + dy2 > canvas.height - ballRadius) {
+    dy2 = -dy2;
   }
 
   if (rightPressed && paddleX < canvas.width - paddleWidth) {
@@ -92,9 +126,13 @@ function draw() {
   }
 
   //move the ball
-  x += dx;
-  y += dy;
+  for(const ball of balls) {
+  ball.x += ball.dx;
+  ball.y += ball.dy;
+  }
 
+  x2 += dx2;
+  y2 += dy2;
   requestAnimationFrame(draw);
 }
 
