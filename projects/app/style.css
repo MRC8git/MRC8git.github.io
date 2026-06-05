@@ -1,0 +1,103 @@
+/*
+#0AB8AC;
+#0A6DB8;
+#0A16B8;
+*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body { 
+	font-family: "Poppins", sans-serif;
+	background: #042844;
+	color: rgb(0, 0, 0);
+
+    display: flex;
+    width: 100%;
+}
+
+nav {
+	width: 100%;
+	padding: 1rem 5%;
+	background: #fefeff5f;
+	border-bottom: 1px solid #d8d8f4;
+	backdrop-filter: blur(50px);
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    width:max-content;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	display: block;
+    width: 100%;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #042844;
+	letter-spacing: 1px;
+	margin-right: auto;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	margin-right: 30px;
+}
+
+.nav-links li a {
+	position: relative;
+	font-size: 1.2rem;
+	font-weight: 550;
+	text-decoration: none;
+	color: #042844;
+	transition: 0.3s;
+}
+
+.nav-links li a:hover {
+	color: #3b3da5;
+	text-shadow: 0 0 10px #3b3da5;
+}
+
+.btns {
+	display: flex;
+}
+
+.btn { 
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	font-weight: 600;
+	font-size: 1rem;
+	background: #042844;
+	color: #ece5f0;
+	box-shadow: 0 0 5px #042844;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background: #3b3da5;
+	box-shadow: 0 0 15px #3b3da5;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+footer {
+	background: #d8d8f4;
+	min-height: 300px;
+}
+
+.logob {
+	height: 50vh;
+}

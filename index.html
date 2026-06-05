@@ -3,12 +3,13 @@
 <head>
 
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script src="../../js/validate.js"></script>
 
 <link rel="stylesheet" href="css/nav.css">
 
- <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16 32x32">
+<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16 32x32">
 
 <style>
 
@@ -30,31 +31,19 @@ img {
 </head>
 
 <body>
-
-	<ul class="nav">
-		<li class="nav"><a href="https://mrc8git.github.io" class="active">Home</a></li>
-		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Practice</a>
-			<div class="dropdown-content">
-			  <a href="https://mrc8git.github.io/practice/index.html">Practice Index</a>
-			  <a href="https://mrc8git.github.io/practice/terminal.html">Basics of Vim</a>
-		  	  <a href="https://mrc8git.github.io/practice/minimal.html">Minimal</a>
-			</div>
-		</li>
-		<li class="dropdown">
-		  <a href="javascript:void(0)" class="dropbtn">Projects</a>
-		  	<div class="dropdown-content">
-				<a href="https://mrc8git.github.io/projects/recipes/index.html">Recipes Homepage</a>
-				<a href="https://mrc8git.github.io/projects/recipes/1.html">#1-Pasta Sauce</a>
-				<a href="https://mrc8git.github.io/projects/recipes/2.html">#2-Tomato Eggs</a>
-			</div>
-		</li>
-		<li class="nav"><a href="https://mrc8git.github.io/js/validate.js">JS(valid.)</a></li>
-	</ul>
-
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      });
+  </script>
+  
+<div id="header-container"></div>
+	
 	<h1>HOMEPAGE</h1>
 
-<img src="images/Penny.jpg"
+<!-- <img src="images/Penny.jpg"
      alt="Puppers"
      srcset="images/Penny-smol.jpg 240w,
 	     images/Penny-meddle.jpg 480w,
@@ -63,11 +52,10 @@ img {
 	   (max-width: 800px) 45vw,
 	   30vw"
 	     >
-	<!-- This photo was taken by me -->
+ This photo was taken by me -->
 
 
-<p>I will write about what I'm doing with this website and how learning html, css, and java is going</p>
-<p><q>The future depends on what you do today.</q> - Mahatma Gandhi</p> 
+
 
 <hr>
 
