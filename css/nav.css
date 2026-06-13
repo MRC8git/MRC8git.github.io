@@ -5,9 +5,11 @@ ul.nav {
 	overflow: hidden;
 	background-color: #e6e9f6;
 }
+
 li.nav { 
 	float: left;
 }
+
 li.nav a, .dropbtn {
 	display: inline-block;
 	color: black;
