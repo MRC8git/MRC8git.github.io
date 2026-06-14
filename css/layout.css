@@ -1,117 +1,76 @@
-.container {  display: grid;
+.container {  
+  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2.3fr 0.5fr;
+  grid-template-rows: 0.3fr 2.6fr 0.5fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   align-items: center;
   grid-template-areas:
-    "Header"
-    "Main"
-    ".";
+    "header"
+    "main"
+    "footer";
 }
 
-.Header {  display: grid;
-  grid-template-columns: 0.5fr 1.6fr;
-  grid-template-rows: 0.8fr 1.4fr 0.8fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". ."
-    "Title Menu"
-    ". .";
-  justify-self: center;
-  grid-area: Header;
-  width: 95%;
-  height: 80%;
+.header {
+  display: flex;
+  grid-area: header;
+  align-self: stretch;
 }
 
-.Title {
-  justify-self: center;
+.header h1 {
+  font-size: 60px;
+  margin: 1rem;
   align-self: center;
-  grid-area: Title;
-  width: 95%;
-  height: 95%;
-  font-size: 50px;
+  flex-grow: 1;
+  text-align: center;
 }
 
-
-.Menu {
-  justify-self: center;
-  align-self: center;
-  grid-area: Menu;
-  width: 95%;
-  height: 95%;
+.header ul {
+  display: flex;
+  flex-grow: 5;
+  list-style: none;
+  gap: 1rem;
 }
 
-.Menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.Menu li {
-    font-size: 20px;
-    display: inline-block;
-}
-
-.Main {  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Main_Img Main_Txt";
-  align-self: center;
-  grid-area: Main;
-  height: 100%;
-}
-
-.Main_Txt {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "MTxt_Title"
-    "MTxt_Body";
-  justify-self: center;
-  align-self: center;
-  grid-area: Main_Txt;
-  width: 90%;
-  height: 80%;
-}
-
-.MTxt_Title {
-  justify-self: center;
-  align-self: center;
-  grid-area: MTxt_Title;
-  width: 90%;
-  height: 80%;
+.header li {
   font-size: 30px;
-  align-content: center;
-}
-
-.MTxt_Title > h2 {
-    text-align: center;
-    text-decoration: none;
-    font-size: 40px;
-}
-
-.MTxt_Body {
-  justify-self: center;
+  font-family: Verdana, Tahoma, sans-serif;
+  display: inline-block;
+  flex-grow: 1;
   align-self: center;
-  grid-area: MTxt_Body;
-  width: 95%;
-  height: 90%;
+  text-align: center;
 }
 
-.Main_Img {
-  justify-self: center;
-  align-self: center;
-  grid-area: Main_Img;
-  width: 90%;
-  height: 80%;
+.header a {
+  justify-self: stretch;
+  text-decoration: none;
 }
+
+.main {  
+  display: flex;
+  grid-area: main;
+  gap: 1rem;
+}
+
+.txt h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.txt p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.main img {
+
+}
+
+.footer { 
+  grid-area: footer; 
+}
+
+
 
 @media screen and (max-width: 80em){
     
